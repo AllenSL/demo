@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mybatis.mapper.SeqInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.example.demo.mybatis.pojo.SeqInfo" >
+    <id column="SEQ_NAME" property="seqName" jdbcType="VARCHAR" />
+    <result column="VALUE" property="value" jdbcType="BIGINT" />
+    <result column="MIN_VALUE" property="minValue" jdbcType="BIGINT" />
+    <result column="MAX_VALUE" property="maxValue" jdbcType="BIGINT" />
+    <result column="YEAR" property="year" jdbcType="SMALLINT" />
+    <result column="ANONYMOUS" property="anonymous" jdbcType="TINYINT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    SEQ_NAME, VALUE, MIN_VALUE, MAX_VALUE, YEAR, ANONYMOUS
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from nt_no_seq
+    where SEQ_NAME = #{seqName,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from nt_no_seq
+    where SEQ_NAME = #{seqName,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.example.demo.mybatis.pojo.SeqInfo" >
+    insert into nt_no_seq (SEQ_NAME, VALUE, MIN_VALUE, 
+      MAX_VALUE, YEAR, ANONYMOUS
+      )
+    values (#{seqName,jdbcType=VARCHAR}, #{value,jdbcType=BIGINT}, #{minValue,jdbcType=BIGINT}, 
+      #{maxValue,jdbcType=BIGINT}, #{year,jdbcType=SMALLINT}, #{anonymous,jdbcType=TINYINT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.demo.mybatis.pojo.SeqInfo" >
+    insert into nt_no_seq
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="seqName != null" >
+        SEQ_NAME,
+      </if>
+      <if test="value != null" >
+        VALUE,
+      </if>
+      <if test="minValue != null" >
+        MIN_VALUE,
+      </if>
+      <if test="maxValue != null" >
+        MAX_VALUE,
+      </if>
+      <if test="year != null" >
+        YEAR,
+      </if>
+      <if test="anonymous != null" >
+        ANONYMOUS,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="seqName != null" >
+        #{seqName,jdbcType=VARCHAR},
+      </if>
+      <if test="value != null" >
+        #{value,jdbcType=BIGINT},
+      </if>
+      <if test="minValue != null" >
+        #{minValue,jdbcType=BIGINT},
+      </if>
+      <if test="maxValue != null" >
+        #{maxValue,jdbcType=BIGINT},
+      </if>
+      <if test="year != null" >
+        #{year,jdbcType=SMALLINT},
+      </if>
+      <if test="anonymous != null" >
+        #{anonymous,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.mybatis.pojo.SeqInfo" >
+    update nt_no_seq
+    <set >
+      <if test="value != null" >
+        VALUE = #{value,jdbcType=BIGINT},
+      </if>
+      <if test="minValue != null" >
+        MIN_VALUE = #{minValue,jdbcType=BIGINT},
+      </if>
+      <if test="maxValue != null" >
+        MAX_VALUE = #{maxValue,jdbcType=BIGINT},
+      </if>
+      <if test="year != null" >
+        YEAR = #{year,jdbcType=SMALLINT},
+      </if>
+      <if test="anonymous != null" >
+        ANONYMOUS = #{anonymous,jdbcType=TINYINT},
+      </if>
+    </set>
+    where SEQ_NAME = #{seqName,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.demo.mybatis.pojo.SeqInfo" >
+    update nt_no_seq
+    set VALUE = #{value,jdbcType=BIGINT},
+      MIN_VALUE = #{minValue,jdbcType=BIGINT},
+      MAX_VALUE = #{maxValue,jdbcType=BIGINT},
+      YEAR = #{year,jdbcType=SMALLINT},
+      ANONYMOUS = #{anonymous,jdbcType=TINYINT}
+    where SEQ_NAME = #{seqName,jdbcType=VARCHAR}
+  </update>
+  <select id="getAllData" resultMap="BaseResultMap">
+    select
+    *
+    from nt_no_seq
+  </select>
+</mapper>

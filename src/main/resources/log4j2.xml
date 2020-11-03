@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--注意此配置文件不能放到config文件夹，防止被Springboot的@ImportResource扫描到 -->
+<!--设置log4j2的自身log级别为warn -->
+<Configuration status="info">
+	<properties>
+		<property name="sysCode">L112</property>
+		<property name="appName">sssc-ctrl-system</property>
+		<property name="logPath">log</property>
+		<!-- 应用日志规范：日志时间|日志级别|线程号|类名|方法名|系统编号|机器IP|业务关键序列号|操作者编码|日志主体内容 -->
+		<property name="appPatternlayout">%date{yyyy-MM-dd HH:mm:ss,SSS}|%level|%thread|%class{36}|%M|${sysCode}|%X{ip}|%msg%xEx%n</property>
+		<property name="appFilename">${logPath}/application/${appName}_applicationLog.log</property>
+		<property name="appFilenamePattern">${logPath}/application/${appName}_applicationLog_%d{yyyy-MM-dd}-%i.log</property>
+		<!-- 统计日志： 日志时间|日志级别|线程号|类名|方法名|系统编号|本机IP|服务提供方IP|服务端接口标识（服务端URI，RPC 的地址）|服务开始时间|服务结束时间|异常信息-->
+		<property name="statisticsPatternlayout">%date{yyyy-MM-dd HH:mm:ss,SSS}|%level|%thread|%class{36}|%M|${sysCode}|%X{ip}|%msg%xEx%n</property>
+		<property name="statisticsFilename">${logPath}/statistics/${appName}_statisticsLog.log</property>
+		<property name="statisticsFilenamePattern">${logPath}/statistics/${appName}_statisticsLog_%d{yyyy-MM-dd}-%i.log</property>
+		<!-- 安全日志： 日志时间|日志级别|线程号|类名|方法名|系统编号|用户IP|用户编码|操作界面URI|日志主体内容-->
+		<property name="securityPatternlayout">%date{yyyy-MM-dd HH:mm:ss,SSS}|%level|%thread|%class{36}|%M|${sysCode}|%X{ip}|%msg%xEx%n</property>
+		<property name="securityFilename">${logPath}/security/${appName}_securityLog.log</property>
+		<property name="securityFilenamePattern">${logPath}/security/${appName}_securityLog_%d{yyyy-MM-dd}-%i.log</property>
+	</properties>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${appPatternlayout}" />
+        </Console>
+		<RollingRandomAccessFile name="appRollingFile" fileName="${appFilename}" filePattern="${appFilenamePattern}">
+            <PatternLayout pattern="${appPatternlayout}" />
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="300MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="20" />
+        </RollingRandomAccessFile>
+        <RollingRandomAccessFile name="statisticsRollingFile" fileName="${statisticsFilename}" filePattern="${statisticsFilenamePattern}">
+            <PatternLayout pattern="${statisticsPatternlayout}" />
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="300MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="20" />
+        </RollingRandomAccessFile>
+        <RollingRandomAccessFile name="securityRollingFile" fileName="${securityFilename}" filePattern="${securityFilenamePattern}">
+            <PatternLayout pattern="${securityPatternlayout}" />
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="300MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="20" />
+        </RollingRandomAccessFile>
+        
+	</Appenders>
+
+	<Loggers>
+		<logger name="statisticsLog" level="info">
+			<appender-ref ref="statisticsRollingFile" />
+		</logger>
+		<logger name="securityLog" level="info">
+			<appender-ref ref="securityRollingFile" />
+		</logger>
+		<Root level="info">
+			<appender-ref ref="Console" />
+			<appender-ref ref="appRollingFile" />
+		</Root>
+	</Loggers>
+</Configuration>
