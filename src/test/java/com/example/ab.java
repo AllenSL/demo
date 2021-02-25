@@ -1,7 +1,5 @@
 package com.example;
 
-import org.springframework.util.Base64Utils;
-
 /**
  * @author ansonglin
  * @className ab
@@ -11,9 +9,6 @@ import org.springframework.util.Base64Utils;
  **/
 public class ab {
 
-    public static void main(String[] args) {
-        System.out.println(new String(Base64Utils.decodeFromString("bGZmMTg3MDExOTk0MDc=")));
 
-    }
 }
    

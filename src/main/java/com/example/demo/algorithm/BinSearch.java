@@ -35,7 +35,7 @@ public class BinSearch {
 
     public static void main(String[] args) {
        int[] a = {1,2,3,4,5,6};
-       BinSearch.binSearch(a,3);
+        System.out.println(BinSearch.binSearch(a, 3));
     }
 }
    

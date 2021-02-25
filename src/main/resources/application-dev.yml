@@ -6,9 +6,9 @@ spring:
     druid:
       driver-class-name: com.mysql.jdbc.Driver
      # url: jdbc:mysql://192.168.241.3:3306/nontax_clear?useUnicode=true&characterEncoding=utf8&useSSL=false
-      url: jdbc:mysql://127.0.0.1:3306/tmall?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+      url: jdbc:mysql://47.92.81.14:3306/tmall?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
       username: root
-      password: 123456
+      password: Offcn#wxsyb!(1sTudEnt
       #配置监控统计拦截的filters，去掉后监控界面SQL无法进行统计，’wall’用于防火墙
       filters: stat,wall,log4j,config
       #最大连接数
@@ -31,13 +31,18 @@ spring:
       max-pool-prepared-statement-per-connection-size: 20
   data:
     mongodb:
-      host: 192.168.68.129
-      port: 27017
-      database: mall
-  #es配置
+      host: 47.92.113.94
+      port: 27018
+      #考研词书
+      database: yici-test
+      username: admin
+      password: Offcn#wxsyb!(1sTudEnt
+      authentication-database: admin
+    #es配置
     elasticsearch:
-      cluster-name: estest
-      cluster-nodes: 192.168.68.129:9300
+      cluster-name: docker-cluster
+      cluster-nodes: 127.0.0.1:9300
+
   main:
     allow-bean-definition-overriding: true
 #配置mybatis扫描mapper.xml  不能Springboot代替扫描，需mybatis自己扫描

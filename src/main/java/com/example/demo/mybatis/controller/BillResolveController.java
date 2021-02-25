@@ -5,17 +5,17 @@ import com.example.demo.base.util.ResultInfo;
 import com.example.demo.base.util.ResultUtil;
 import com.example.demo.mybatis.pojo.BillResolve;
 import com.example.demo.mybatis.service.IBillResolveService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 /**
  * 基于mybatis-plus的DB操作
  */
-@RestController
-@RequestMapping("/billResolve")
+//@RestController
+//@RequestMapping("/billResolve")
 public class BillResolveController {
 
-    @Autowired
+//    @Autowired
     private IBillResolveService iBillResolveService;
 
     @GetMapping("/{transNo}")

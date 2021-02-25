@@ -7,7 +7,6 @@ import com.example.demo.base.util.ResultUtil;
 import com.example.demo.mybatis.pojo.SeqInfo;
 import com.example.demo.mybatis.service.ISeqInfoService;
 import com.github.pagehelper.PageInfo;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -17,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/seqInfo")
 public class SeqInfoController {
 
-    @Autowired
+//    @Autowired
     private ISeqInfoService iSeqInfoService;
 
     @GetMapping("/{seqName}")

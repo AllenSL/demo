@@ -6,12 +6,11 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.demo.mybatis.mapper.BillResolveMapper;
 import com.example.demo.mybatis.pojo.BillResolve;
 import com.example.demo.mybatis.service.IBillResolveService;
-import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
 
-@Service
+//@Service
 public class BillResolveServiceimpl extends ServiceImpl<BillResolveMapper, BillResolve> implements IBillResolveService {
 
 

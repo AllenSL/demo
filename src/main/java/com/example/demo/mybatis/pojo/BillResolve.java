@@ -2,14 +2,13 @@ package com.example.demo.mybatis.pojo;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
-@TableName("nt_bill_resolve")
+//@TableName("nt_bill_resolve")
 public class BillResolve {
 
     @TableId(value = "TRANS_NO")

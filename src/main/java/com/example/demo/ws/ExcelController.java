@@ -6,7 +6,6 @@ import cn.afterturn.easypoi.excel.entity.result.ExcelImportResult;
 import com.example.demo.file.ExcelUtils;
 import com.example.demo.mybatis.pojo.BillResolve;
 import com.example.demo.mybatis.service.IBillResolveService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -26,7 +25,7 @@ import java.util.Map;
 @RequestMapping("/Excel")
 public class ExcelController {
 
-    @Autowired
+//    @Autowired
     private IBillResolveService iBillResolveService;
 
     @GetMapping("/export")

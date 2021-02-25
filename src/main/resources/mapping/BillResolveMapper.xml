@@ -59,7 +59,7 @@
     RECORD_STATUS, RECORD_DATE, RECORD_ID, RECORD_NO, DELIMIT_BATCH_NO, SEND_PLAT_STATUS, 
     SEND_MESSAGE, SEND_TIME, PROP_FLAG, CHECK_STATUS
   </sql>
-  <select id="getUsersPage" resultType="com.example.demo.mybatis.pojo.BillResolve" >
-    select * from nt_bill_resolve where BUDGET_LEVEL = #{budgetLevel,jdbc}
+  <select id="getUsersPage" resultType="java.util.List" >
+    select * from nt_bill_resolve where BUDGET_LEVEL = #{budgetLevel}
   </select>
 </mapper>
