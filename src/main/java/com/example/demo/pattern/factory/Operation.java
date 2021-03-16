@@ -9,6 +9,6 @@ package com.example.demo.pattern.factory;
  **/
 public interface Operation {
 
-    public int apply(int a,int b);
+    public int apply(int a, int b);
 }
    

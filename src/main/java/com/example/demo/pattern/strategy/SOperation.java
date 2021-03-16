@@ -9,6 +9,6 @@ package com.example.demo.pattern.strategy;
  **/
 public interface SOperation {
 
-    int apply(int a,int b);
+    int apply(int a, int b);
 }
    

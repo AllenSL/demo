@@ -19,16 +19,18 @@ public interface OssService {
 
     /**
      * 文件以UUID命名批量存储
+     *
      * @param files
-     * @param fileType  上传文件类型 图片1、视频2、音频3
+     * @param fileType 上传文件类型 图片1、视频2、音频3
      * @return
      */
     FileUpLoadResultList batchUploadFile(MultipartFile[] files, Integer fileType);
 
     /**
      * 文件以UUID命名存储
+     *
      * @param file
-     * @param fileType  上传文件类型 图片1、视频2、音频3
+     * @param fileType 上传文件类型 图片1、视频2、音频3
      * @return
      */
     FileUpLoadResult upLoadFile(MultipartFile file, Integer fileType);
@@ -36,8 +38,8 @@ public interface OssService {
     /**
      * 以指定文件名上传
      *
-     * @param file 指定文件
-     * @param name 指定文件名
+     * @param file     指定文件
+     * @param name     指定文件名
      * @param fileType 上传文件类型 图片1、视频2、音频3
      * @return
      */

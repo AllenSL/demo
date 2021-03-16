@@ -15,7 +15,7 @@ public class BillResolveServiceimpl extends ServiceImpl<BillResolveMapper, BillR
 
 
     @PostConstruct
-    public void init(){
+    public void init() {
         List<BillResolve> list = this.list();
     }
 
@@ -41,7 +41,7 @@ public class BillResolveServiceimpl extends ServiceImpl<BillResolveMapper, BillR
 
     @Override
     public IPage getBillResolvePage(Page page, String budgetLevel) {
-        return baseMapper.getUsersPage(page,budgetLevel);
+        return baseMapper.getUsersPage(page, budgetLevel);
     }
 
 }

@@ -17,8 +17,8 @@
 package com.example.demo.util;
 
 /**
- * @description 常量类
  * @author ansonglin
+ * @description 常量类
  */
 public class Constant {
 

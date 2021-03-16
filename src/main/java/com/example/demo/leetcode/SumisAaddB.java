@@ -9,24 +9,24 @@ package com.example.demo.leetcode;
  */
 public class SumisAaddB {
 
-  public static void main(String[] args) {
-      int result = 15;
-      int[] num = {1,2,4,7,11,15};
+    public static void main(String[] args) {
+        int result = 15;
+        int[] num = {1, 2, 4, 7, 11, 15};
 
-      int start = 0;
-      int end = num.length-1;
+        int start = 0;
+        int end = num.length - 1;
 
-      while (start < end){
-          if(num[start] + num[end] == result){
-        System.out.println(num[start] + " "+ num[end]);
-              break;
-          }else if (num[start] + num[end] < result){
-              start ++;
-          }else {
-              end --;
-          }
+        while (start < end) {
+            if (num[start] + num[end] == result) {
+                System.out.println(num[start] + " " + num[end]);
+                break;
+            } else if (num[start] + num[end] < result) {
+                start++;
+            } else {
+                end--;
+            }
 
-      }
-  }
+        }
+    }
 }
    

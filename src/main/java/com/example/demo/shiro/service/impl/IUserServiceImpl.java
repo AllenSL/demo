@@ -18,7 +18,7 @@ public class IUserServiceImpl implements IUserService {
     @Override
     public String generateJwtToken(String userName) {
         String salt = "1234";
-        return JwtUtils.sign(userName,salt,60*60L);
+        return JwtUtils.sign(userName, salt, 60 * 60L);
     }
 }
    

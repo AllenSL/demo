@@ -29,8 +29,8 @@ public class MockServer {
 //           mock("/options/Index/priceIndex/BTC_USDT", "1");
 //        mock("/options/Index/priceIndex/BTC_USDT2", "2");
         mock("/api.huobipro.com/market/history/kline", "2");
-        mock("/api.huobipro.com/market/history/kline?period=60min&size=30&symbol=btcusdt","3");
-        mock("/wanghonghui","4");
+        mock("/api.huobipro.com/market/history/kline?period=60min&size=30&symbol=btcusdt", "3");
+        mock("/wanghonghui", "4");
     }
 
     private static void mock(String url, String file) throws IOException {

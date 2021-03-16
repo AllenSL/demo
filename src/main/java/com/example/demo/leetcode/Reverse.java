@@ -9,7 +9,7 @@ package com.example.demo.leetcode;
  **/
 public class Reverse {
 
-    public static int reverse(int x){
+    public static int reverse(int x) {
         String xString = Integer.toString(x);
         String string = xString;
         int flag = 1;
@@ -19,14 +19,14 @@ public class Reverse {
         }
         try {
             return Integer.valueOf((new StringBuilder(string)).reverse().toString()) * flag;
-        }catch (Exception e){
+        } catch (Exception e) {
             return 0;
         }
     }
 
-  public static void main(String[] args) {
-      int reverse = reverse(1534236469);
-    System.out.println(Long.valueOf("9646324351"));
-  }
+    public static void main(String[] args) {
+        int reverse = reverse(1534236469);
+        System.out.println(Long.valueOf(reverse));
+    }
 }
    

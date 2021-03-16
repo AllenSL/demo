@@ -20,11 +20,11 @@ public class UserService {
     @Autowired
     private UserDao userDao;
 
-    public JsonObject getById(int id){
+    public JsonObject getById(int id) {
         return userDao.getById(id);
     }
 
-    public void batchAdd(List<Map<String,Object>> list){
+    public void batchAdd(List<Map<String, Object>> list) {
         userDao.insertAll(list);
     }
 }

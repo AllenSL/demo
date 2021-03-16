@@ -32,7 +32,7 @@ public class FileTypeJudge {
     static {
         pics = new FileType[]{FileType.JPEG, FileType.PNG, FileType.TIFF};
 
-        videos = new FileType[]{FileType.AVI, FileType.MP4,  FileType.FLV};
+        videos = new FileType[]{FileType.AVI, FileType.MP4, FileType.FLV};
 
         audios = new FileType[]{FileType.MP3};
     }
@@ -117,7 +117,7 @@ public class FileTypeJudge {
      * @return
      */
     public static void isFileType(MultipartFile file, Integer fileType) {
-        switch (fileType){
+        switch (fileType) {
             case 1:
                 checkPic(file);
                 break;
@@ -161,7 +161,7 @@ public class FileTypeJudge {
      * @param file
      * @return
      */
-    public static void  checkPic(MultipartFile file) {
+    public static void checkPic(MultipartFile file) {
         FileType value = null;
         try {
             value = FileTypeJudge.getType(file.getInputStream());
@@ -210,7 +210,6 @@ public class FileTypeJudge {
         if (flag == 0) {
             throw new CommonException(ExceptionConstant.FILETYPE_ERROR_CODE, String.format("上传失败，此文件类型暂不支持", file.getOriginalFilename()));
         }
-
 
 
     }

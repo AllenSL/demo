@@ -13,20 +13,20 @@ import java.util.Optional;
  **/
 public class OperatorFactory {
 
-    static Map<String,Operation> operationMap = new HashMap<>();
+    static Map<String, Operation> operationMap = new HashMap<>();
 
     static {
-        operationMap.put("add",new Addition());
-        operationMap.put("subtract",new Subtraction());
+        operationMap.put("add", new Addition());
+        operationMap.put("subtract", new Subtraction());
     }
 
-    public static Optional<Operation> getOperation(String opterator){
+    public static Optional<Operation> getOperation(String opterator) {
         return Optional.ofNullable(operationMap.get(opterator));
     }
 
     public static void main(String[] args) {
         Operation operation = OperatorFactory.getOperation("add").orElseThrow(() -> new IllegalArgumentException("Invalid Operator"));
-        operation.apply(1,4);
+        operation.apply(1, 4);
     }
 }
    

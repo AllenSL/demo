@@ -9,7 +9,7 @@ package com.example.demo.pattern.responsibilitychain.demo3;
  **/
 public interface IRequestProcessor {
 
-     void process(Request request);
+    void process(Request request);
 
 }
    

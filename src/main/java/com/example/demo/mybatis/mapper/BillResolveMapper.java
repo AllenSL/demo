@@ -16,5 +16,5 @@ public interface BillResolveMapper extends BaseMapper<BillResolve> {
 //    BillResolve getUserByName(String userName );
 
     // 分页查询
-    IPage<List<BillResolve>> getUsersPage(Page page, @Param("budgetLevel") String budgetLevel );
+    IPage<List<BillResolve>> getUsersPage(Page page, @Param("budgetLevel") String budgetLevel);
 }

@@ -11,9 +11,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class HttpClient {
-   public String post(String hostName, Integer port, Invocation invocation) throws IOException {
+    public String post(String hostName, Integer port, Invocation invocation) throws IOException {
 
-        URL url = new URL("HTTP",hostName,port,"/");
+        URL url = new URL("HTTP", hostName, port, "/");
         HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
         httpURLConnection.setDoOutput(true);
         OutputStream outputStream = httpURLConnection.getOutputStream();

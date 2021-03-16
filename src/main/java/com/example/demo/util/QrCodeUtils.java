@@ -24,18 +24,19 @@ import java.util.Hashtable;
 public class QrCodeUtils {
 
     public static void main(String[] args) throws IOException, WriterException {
-        generateQRCodeImage("https://www.alinecode.com?qrCodeId=1&dateTime=123445656778",40,50,"D:\\YICI");
+        generateQRCodeImage("https://www.alinecode.com?qrCodeId=1&dateTime=123445656778", 40, 50, "D:\\YICI");
     }
 
     /**
      * 生成二维码
-     * @date   2019年6月11日下午4:39:16
+     *
      * @param contents 二维码的内容
-     * @param width 二维码图片宽度
-     * @param height 二维码图片高度
+     * @param width    二维码图片宽度
+     * @param height   二维码图片高度
+     * @date 2019年6月11日下午4:39:16
      */
-    public static BufferedImage createQrCodeBufferdImage(String contents, int width, int height){
-        Hashtable hints= new Hashtable();
+    public static BufferedImage createQrCodeBufferdImage(String contents, int width, int height) {
+        Hashtable hints = new Hashtable();
         hints.put(EncodeHintType.CHARACTER_SET, "utf-8");
         BufferedImage image = null;
         try {

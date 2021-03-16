@@ -24,7 +24,7 @@ public class SeqInfoServiceimpl implements ISeqInfoService {
 
     @Override
     public PageInfo<SeqInfo> queryDataByPage(Page page) {
-        PageHelper.startPage(page.getPageNo(),page.getPageSize());
+        PageHelper.startPage(page.getPageNo(), page.getPageSize());
         List<SeqInfo> allData = seqInfoMapper.getAllData();
         return new PageInfo(allData);
     }

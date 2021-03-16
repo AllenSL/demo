@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-public class ZipUtils{
+public class ZipUtils {
     private static final int BUFFER_SIZE = 2 * 1024;
 
     /**

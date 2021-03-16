@@ -23,7 +23,7 @@ public class DateUtils2 {
         long current = System.currentTimeMillis();
         long tmp = TimeZone.getDefault().getRawOffset();
         long zeroT = (current + tmp) / (1000 * 3600 * 24) * (1000 * 3600 * 24) - TimeZone.getDefault().getRawOffset();
-        return new SimpleDateFormat( "yyyy-MM-dd HH:mm:ss" ).format( zeroT );
+        return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(zeroT);
     }
 
     /**
@@ -78,50 +78,51 @@ public class DateUtils2 {
      */
     public static Long getPreDayZeroDate(int dayNum) {
         Calendar calendar = Calendar.getInstance();
-        calendar.set(calendar.get(Calendar.YEAR),calendar.get(Calendar.MONDAY), calendar.get(Calendar.DAY_OF_MONTH), 0, 0,0);
+        calendar.set(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONDAY), calendar.get(Calendar.DAY_OF_MONTH), 0, 0, 0);
         calendar.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
-        calendar.add(Calendar.DATE,-dayNum);
-        return (calendar.getTime().getTime()/1000);
+        calendar.add(Calendar.DATE, -dayNum);
+        return (calendar.getTime().getTime() / 1000);
     }
 
 
     /**
      * date2比date1多的天数
+     *
      * @param date1
      * @param date2
      * @return
      */
-    public static int differentDays(Date date1, Date date2){
+    public static int differentDays(Date date1, Date date2) {
         Calendar cal1 = Calendar.getInstance();
         cal1.setTime(date1);
 
         Calendar cal2 = Calendar.getInstance();
         cal2.setTime(date2);
-        int day1= cal1.get(Calendar.DAY_OF_YEAR);
+        int day1 = cal1.get(Calendar.DAY_OF_YEAR);
         int day2 = cal2.get(Calendar.DAY_OF_YEAR);
 
         int year1 = cal1.get(Calendar.YEAR);
         int year2 = cal2.get(Calendar.YEAR);
-        if(year1 != year2){
+        if (year1 != year2) {
             //不同一年
-            int timeDistance = 0 ;
-            for(int i = year1 ; i < year2 ; i ++){
-                if(i%4==0 && i%100!=0 || i%400==0){
+            int timeDistance = 0;
+            for (int i = year1; i < year2; i++) {
+                if (i % 4 == 0 && i % 100 != 0 || i % 400 == 0) {
                     //闰年
                     timeDistance += 366;
-                }else {
+                } else {
                     //不是闰年
                     timeDistance += 365;
                 }
             }
-            return timeDistance + (day2-day1) ;
-        }else{
+            return timeDistance + (day2 - day1);
+        } else {
             //同一年
-            return day2-day1;
+            return day2 - day1;
         }
     }
 
-    public static Long getDayStartTime(Date d){
+    public static Long getDayStartTime(Date d) {
         Calendar calendar = Calendar.getInstance();
         if (null != d) {
             calendar.setTime(d);
@@ -153,23 +154,24 @@ public class DateUtils2 {
      */
     public static Long getPreDayDate(int dayNum) {
         Calendar calendar = Calendar.getInstance();
-        calendar.set(calendar.get(Calendar.YEAR),calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH), 0, 0,0);
+        calendar.set(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH), 0, 0, 0);
         calendar.set(Calendar.MILLISECOND, 0);
-        calendar.add(Calendar.DATE,-dayNum);
+        calendar.add(Calendar.DATE, -dayNum);
         return calendar.getTimeInMillis();
     }
 
     /**
      * 获取明年的本月月末时间
+     *
      * @return
      */
-    public static Date getNextYearThisMonthEndTime(){
+    public static Date getNextYearThisMonthEndTime() {
         Calendar calendar = Calendar.getInstance();
         calendar.set(calendar.get(Calendar.YEAR) + 1,
                 calendar.get(Calendar.MONTH),
                 calendar.getActualMaximum(Calendar.DAY_OF_MONTH),
-                23,59,59
-                );
+                23, 59, 59
+        );
         calendar.set(Calendar.MILLISECOND, 0);
         return calendar.getTime();
     }
@@ -183,18 +185,19 @@ public class DateUtils2 {
      */
     public static String format(Date date, String pattern) {
         if (date != null) {
-            SimpleDateFormat df = new SimpleDateFormat( pattern );
-            return df.format( date );
+            SimpleDateFormat df = new SimpleDateFormat(pattern);
+            return df.format(date);
         }
         return null;
     }
 
     /**
      * 获取当前年份 如：2020
+     *
      * @return
      */
     public static Integer getCurrentYear() {
-        return Integer.parseInt(format(new Date(),"yyyy"));
+        return Integer.parseInt(format(new Date(), "yyyy"));
     }
 
 

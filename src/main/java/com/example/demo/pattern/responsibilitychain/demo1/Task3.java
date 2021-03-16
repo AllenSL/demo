@@ -11,16 +11,17 @@ public class Task3 implements Task {
 
     private Task task;
 
-    Task3(){}
+    Task3() {
+    }
 
-    Task3(Task task){
+    Task3(Task task) {
         this.task = task;
     }
 
     @Override
     public void run() {
         System.out.println("task3 run");
-        if(null != task ){
+        if (null != task) {
             task.run();
         }
     }

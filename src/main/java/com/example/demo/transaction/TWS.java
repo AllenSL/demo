@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- *@className TWS
- *@description TODO
- *@author ansonglin
- *@date 2021/2/22 9:24 上午
- *@cersion 1.0
+ * @author ansonglin
+ * @className TWS
+ * @description TODO
+ * @date 2021/2/22 9:24 上午
+ * @cersion 1.0
  **/
 @RestController
 @RequestMapping
@@ -26,9 +26,9 @@ public class TWS {
     ClassBService classBService;
 
     @GetMapping("/transactionTest")
-    public ResultInfo transactionTest(){
-     classAService.testA();
-     return ResultUtil.success();
+    public ResultInfo transactionTest() {
+        classAService.testA();
+        return ResultUtil.success();
     }
 
 }

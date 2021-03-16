@@ -15,6 +15,7 @@ import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
 //@Component
 public class JdbcBaseDaoImpl<T> implements JdbcBaseDao<T> {
     public static final String SQL_INSERT = "insert";
@@ -346,9 +347,9 @@ public class JdbcBaseDaoImpl<T> implements JdbcBaseDao<T> {
 
     @Override
     public void batchDelete(Serializable[] ids) {
-        String idStr="";
+        String idStr = "";
         for (int i = 0; i < ids.length; i++) {
-            idStr+=",'"+ids[i]+"'";
+            idStr += ",'" + ids[i] + "'";
         }
         String sql = " DELETE FROM " + entityClass.getSimpleName() + " WHERE id in (?)";
         jdbcTemplate.update(sql, idStr.charAt(1));

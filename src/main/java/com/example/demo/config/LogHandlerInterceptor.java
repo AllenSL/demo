@@ -23,6 +23,7 @@ public class LogHandlerInterceptor extends HandlerInterceptorAdapter {
 
     private NamedThreadLocal<Long> startTimeThreadLocal =
             new NamedThreadLocal<Long>("StopWatch-StartTime");
+
     /**
      * 在请求处理之前进行调用（Controller方法调用之前）
      * 只有返回true才会继续向下执行，返回false取消当前请求
@@ -32,9 +33,10 @@ public class LogHandlerInterceptor extends HandlerInterceptorAdapter {
                              HttpServletResponse response, Object handler) throws Exception {
         long beginTime = System.currentTimeMillis();//1、开始时间
         startTimeThreadLocal.set(beginTime);//线程绑定变量（该数据只有当前请求的线程可见）
-        logger.info("开始执行{}:{}",request.getRequestURI(),request.getMethod());
+        logger.info("开始执行{}:{}", request.getRequestURI(), request.getMethod());
         return true;
     }
+
     /**
      * 请求处理之后进行调用，但是在视图被渲染之前（Controller方法调用之后）");
      */
@@ -45,8 +47,9 @@ public class LogHandlerInterceptor extends HandlerInterceptorAdapter {
         long endTime = System.currentTimeMillis();//2、结束时间
         long beginTime = startTimeThreadLocal.get();//得到线程绑定的局部变量（开始时间）
         long consumeTime = endTime - beginTime;//3、消耗的时间
-        logger.info("执行结束请求：{}所用时间：{}",request.getRequestURI(),consumeTime);
+        logger.info("执行结束请求：{}所用时间：{}", request.getRequestURI(), consumeTime);
     }
+
     /**
      * 在整个请求结束之后被调用，渲染了对应的视图之后执行（主要是用于进行资源清理工作）
      */
@@ -60,6 +63,7 @@ public class LogHandlerInterceptor extends HandlerInterceptorAdapter {
 
     /**
      * 获取客户端真实IP
+     *
      * @param request
      * @return
      */

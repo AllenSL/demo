@@ -19,7 +19,7 @@ public class SleepSort implements Runnable {
     @Override
     public void run() {
         try {
-            Thread.sleep(num );
+            Thread.sleep(num);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

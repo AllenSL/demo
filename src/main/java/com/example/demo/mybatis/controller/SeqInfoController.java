@@ -16,20 +16,20 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/seqInfo")
 public class SeqInfoController {
 
-//    @Autowired
+    //    @Autowired
     private ISeqInfoService iSeqInfoService;
 
     @GetMapping("/{seqName}")
-    public ResultInfo querySeqInfoBykey(@PathVariable("seqName") String seqName){
+    public ResultInfo querySeqInfoBykey(@PathVariable("seqName") String seqName) {
         SeqInfo seqInfo = iSeqInfoService.queryInfoBySeqName(seqName);
         return ResultUtil.success(seqInfo);
     }
 
     @PostMapping("/getPageData")
-    public ResultInfo queryAllDataByPage(@RequestBody Page page){
+    public ResultInfo queryAllDataByPage(@RequestBody Page page) {
         PageInfo<SeqInfo> seqInfoPageInfo = iSeqInfoService.queryDataByPage(page);
-        PageDTO<SeqInfo> pageDTO =  new PageDTO<SeqInfo>(seqInfoPageInfo.getList(),seqInfoPageInfo.getTotal());
-      return ResultUtil.success(pageDTO);
+        PageDTO<SeqInfo> pageDTO = new PageDTO<SeqInfo>(seqInfoPageInfo.getList(), seqInfoPageInfo.getTotal());
+        return ResultUtil.success(pageDTO);
     }
 
 }

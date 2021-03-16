@@ -30,14 +30,14 @@ public class XiaoMiPush {
      * @param aliasList      指定alias
      */
     public static boolean xiaomiBatchPush(String messagePayload, String title, String description, String adsType,
-                                          String adsLinks, List<String> aliasList, Map<String,String> parm) {
-        log.info("小米设备：{}",aliasList);
+                                          String adsLinks, List<String> aliasList, Map<String, String> parm) {
+        log.info("小米设备：{}", aliasList);
         try {
-            JSONObject result = builderMessageAndSender(messagePayload, title, description, adsType, adsLinks,parm);
+            JSONObject result = builderMessageAndSender(messagePayload, title, description, adsType, adsLinks, parm);
             Message message = (Message) result.get("message");
             Sender sender = (Sender) result.get("sender");
             Result pushResult = sender.send(message, aliasList, 3);
-            log.debug("++++推送到小米结果为：{}",pushResult);
+            log.debug("++++推送到小米结果为：{}", pushResult);
             if (pushResult != null) {
                 return true;
             }
@@ -48,7 +48,7 @@ public class XiaoMiPush {
         return false;
     }
 
-    public static JSONObject builderMessageAndSender(String messagePayload, String title, String description, String adsType, String adsLinks, Map<String,String> parm) {
+    public static JSONObject builderMessageAndSender(String messagePayload, String title, String description, String adsType, String adsLinks, Map<String, String> parm) {
         //boolean isProd = myProperties.getPush().isProd();
         boolean isProd = ConstantsUnit.xiaomiProd;
         // 设置环境 正式环境下使用Push服务，启动时需要调用如下代码
@@ -74,7 +74,7 @@ public class XiaoMiPush {
                 /** 定时发送消息ms(7天内). */
                 //.timeToSend(1000)
                 /** 多条消息需要设置id，否则会覆盖上一条. */
-                 .notifyId(1)
+                .notifyId(1)
                 .build();
         // 构建发送
         Sender sender = new Sender(ConstantsUnit.xiaomiAppSecretKey);
@@ -87,13 +87,14 @@ public class XiaoMiPush {
 
     /**
      * 根据regids推送消息
-     * @param regIds  regId列表
+     *
+     * @param regIds regId列表
      * @throws Exception
      */
     private static void sendMessage(List<String> regIds) throws Exception {
         Constants.useOfficial();
-         Sender sender = new Sender(ConstantsUnit.xiaomiAppSecretKey);
-        String messagePayload= "This is a message";
+        Sender sender = new Sender(ConstantsUnit.xiaomiAppSecretKey);
+        String messagePayload = "This is a message";
         String title = "notification title";
         String description = "notification description";
         Message message = new Message.Builder()
@@ -103,15 +104,15 @@ public class XiaoMiPush {
                 /** 使用默认提示音提示. */
                 .notifyType(1)
                 .build();
-                /** 发送消息到一组设备上, regids个数不得超过1000个. */
+        /** 发送消息到一组设备上, regids个数不得超过1000个. */
         Result send = sender.send(message, regIds, 3);
-        System.out.println(send.getData()+" "+send.getErrorCode().getDescription());
+        System.out.println(send.getData() + " " + send.getErrorCode().getDescription());
     }
 
     public static void main(String[] args) throws Exception {
-       List<String> list = new ArrayList<>();
-       list.add("vWBrBT/WLo1MznUW5TnWzX3VU1kr5KC+j9Guf8onOLJAM195mCTTYvHONp7xCIXM");
-        xiaomiBatchPush("1223","title","description","String","http://www.baidu.com",list,null);
+        List<String> list = new ArrayList<>();
+        list.add("vWBrBT/WLo1MznUW5TnWzX3VU1kr5KC+j9Guf8onOLJAM195mCTTYvHONp7xCIXM");
+        xiaomiBatchPush("1223", "title", "description", "String", "http://www.baidu.com", list, null);
     }
 
 }

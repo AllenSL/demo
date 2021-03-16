@@ -43,7 +43,7 @@ public class OssServiceImpl implements OssService {
             String url;
             try {
                 fileR = new FileUpLoadResult();
-                url = this.upLoadFileWithUUID(file, fileR,fileType);
+                url = this.upLoadFileWithUUID(file, fileR, fileType);
                 fileR.setFileName(file.getOriginalFilename());
                 fileR.setFileUrl(url);
                 sussFiles.add(fileR);
@@ -65,25 +65,25 @@ public class OssServiceImpl implements OssService {
     }
 
     @Override
-    public FileUpLoadResult upLoadFile(MultipartFile file,Integer fileType) {
-        log.info("【{}】文件开始上传...",file.getOriginalFilename());
+    public FileUpLoadResult upLoadFile(MultipartFile file, Integer fileType) {
+        log.info("【{}】文件开始上传...", file.getOriginalFilename());
         FileUpLoadResult flr = null;
         try {
             flr = new FileUpLoadResult();
-            String url = this.upLoadFileWithUUID(file, flr,fileType);
+            String url = this.upLoadFileWithUUID(file, flr, fileType);
             flr.setFileName(file.getOriginalFilename());
             flr.setFileUrl(url);
         } catch (IOException e) {
             log.error("文件{}上传失败,原因:{}", file.getOriginalFilename(), e.getMessage(), e);
             throw new CommonException(String.format("文件上传失败，原因:{%s}", e.getMessage()));
-        }catch (CommonException e) {
+        } catch (CommonException e) {
             log.error("文件{}上传失败,原因:{}", file.getOriginalFilename(), e.getMessage(), e);
             flr = new FileUpLoadResult(file.getOriginalFilename(), null, e.getMessage());
         } catch (Exception e) {
             log.error("文件{}上传失败,原因:{}", e.getMessage(), e);
             e.printStackTrace();
         }
-        log.info("【{}】文件上传结束",file.getOriginalFilename());
+        log.info("【{}】文件上传结束", file.getOriginalFilename());
         return flr;
     }
 
@@ -105,7 +105,7 @@ public class OssServiceImpl implements OssService {
 
     @Override
     public void saveFileToPath(String url, String filePath, String fileName) {
-        log.info("【{}】文件开始下载...",fileName);
+        log.info("【{}】文件开始下载...", fileName);
         try {
             URL httpUrl = new URL(url);
             File file = new File(filePath);
@@ -118,7 +118,7 @@ public class OssServiceImpl implements OssService {
         } catch (IOException e) {
             log.error("下载文件{}异常，原因：{}", url, e.getMessage(), e);
         }
-        log.info("【{}】文件下载完成",fileName);
+        log.info("【{}】文件下载完成", fileName);
     }
 
     /**
@@ -128,9 +128,9 @@ public class OssServiceImpl implements OssService {
      * @return
      * @throws IOException
      */
-    public String upLoadFileWithUUID(MultipartFile file, FileUpLoadResult fileR,Integer fileType) throws IOException {
+    public String upLoadFileWithUUID(MultipartFile file, FileUpLoadResult fileR, Integer fileType) throws IOException {
         String suffix = file.getOriginalFilename().substring(file.getOriginalFilename().lastIndexOf("."));
-        FileTypeJudge.isFileType(file,fileType);
+        FileTypeJudge.isFileType(file, fileType);
         //如果文件类型为视频类型，即fileType = 2，获取视频播放时长
         if (2 == fileType && fileR != null) {
             String length = FileUtils.ReadVideoTime(file);
@@ -146,14 +146,14 @@ public class OssServiceImpl implements OssService {
      * @return
      * @throws IOException
      */
-    public String upLoadFileWithName(MultipartFile file,Integer fileType) throws IOException {
-        FileTypeJudge.isFileType(file,fileType);
+    public String upLoadFileWithName(MultipartFile file, Integer fileType) throws IOException {
+        FileTypeJudge.isFileType(file, fileType);
         return OSSFactory.build(fileType).uploadInrealName(file.getBytes(), file.getOriginalFilename());
     }
 
     @Override
-    public String upLoadFile(MultipartFile file, String name,Integer fileType) throws IOException {
-        FileTypeJudge.isFileType(file,fileType);
+    public String upLoadFile(MultipartFile file, String name, Integer fileType) throws IOException {
+        FileTypeJudge.isFileType(file, fileType);
         name = name + file.getOriginalFilename().substring(file.getOriginalFilename().lastIndexOf("."));
         return OSSFactory.build(fileType).uploadInrealName(file.getBytes(), name);
     }

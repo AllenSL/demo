@@ -15,18 +15,18 @@ import org.springframework.web.bind.annotation.PathVariable;
 //@RequestMapping("/billResolve")
 public class BillResolveController {
 
-//    @Autowired
+    //    @Autowired
     private IBillResolveService iBillResolveService;
 
     @GetMapping("/{transNo}")
-    public ResultInfo queryBillResolveBykey(@PathVariable("transNo") Long transNo){
+    public ResultInfo queryBillResolveBykey(@PathVariable("transNo") Long transNo) {
         BillResolve billResolve = iBillResolveService.queryByPrimaryKey(transNo);
         iBillResolveService.list();
         return ResultUtil.success(billResolve);
     }
 
     @GetMapping("/page")
-    public ResultInfo queryBillResolveByPage(Page page, String budgetLevel){
-        return ResultUtil.success(iBillResolveService.getBillResolvePage(page,budgetLevel));
+    public ResultInfo queryBillResolveByPage(Page page, String budgetLevel) {
+        return ResultUtil.success(iBillResolveService.getBillResolvePage(page, budgetLevel));
     }
 }

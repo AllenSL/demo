@@ -18,14 +18,14 @@ public class FileUtils {
 
     /**
      * 检查文件类型是否匹配
-     * @param file 文件
-     * @param expectType  文件的期望类型 音频1，视频2
+     *
+     * @param file       文件
+     * @param expectType 文件的期望类型 音频1，视频2
      */
-    public void checkFile(MultipartFile file,Integer expectType){
+    public void checkFile(MultipartFile file, Integer expectType) {
 
 
     }
-
 
 
 }

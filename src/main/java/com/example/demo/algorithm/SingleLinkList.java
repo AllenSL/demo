@@ -13,69 +13,70 @@ public class SingleLinkList {
     private int size;
     private Node head;
 
-    public Object addHead(Object obj){
+    public Object addHead(Object obj) {
         Node newHead = new Node(obj);
-        if(size == 0){
-          head = newHead;
-        }else {
+        if (size == 0) {
+            head = newHead;
+        } else {
             newHead.next = head;
             head = newHead;
         }
-        size ++;
+        size++;
         return obj;
     }
 
-    public Object delHead(){
-     Object obj = head.obj;
-     head = head.next;
-     size --;
-     return obj;
+    public Object delHead() {
+        Object obj = head.obj;
+        head = head.next;
+        size--;
+        return obj;
     }
 
-    public Node find(Object obj){
+    public Node find(Object obj) {
         Node node = head;
         int tempSize = size;
-        while (tempSize > 0){
-            if(node.obj.equals(obj)){
+        while (tempSize > 0) {
+            if (node.obj.equals(obj)) {
                 return node;
-            }else {
+            } else {
                 node = node.next;
             }
-            tempSize --;
+            tempSize--;
         }
         return node;
     }
 
-    public boolean delNode(Object obj){
-      if(size == 0){
-          return false;
-      }
-      Node current = head;
-      Node previous = head;
-      while (current.obj != obj){
-          if(current.next == null){
-              return false;
-          }else {
-              previous = current;
-              current = current.next;
-          }
-      }
+    public boolean delNode(Object obj) {
+        if (size == 0) {
+            return false;
+        }
+        Node current = head;
+        Node previous = head;
+        while (current.obj != obj) {
+            if (current.next == null) {
+                return false;
+            } else {
+                previous = current;
+                current = current.next;
+            }
+        }
 
-      if(current == head){
-          head = current.next;
-          size --;
-      }else {
-          previous.next = current.next;
-          size --;
-      }
-      return true;
+        if (current == head) {
+            head = current.next;
+            size--;
+        } else {
+            previous.next = current.next;
+            size--;
+        }
+        return true;
     }
 
-    public class Node{
+    public class Node {
         private Object obj;
         private Node next;
-        public Node(Object obj){
-          this.obj = obj;
+
+        public Node(Object obj) {
+            this.obj = obj;
         }
     }
 }

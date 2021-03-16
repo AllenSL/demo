@@ -6,11 +6,13 @@ import com.github.pagehelper.PageInfo;
 
 public interface ISeqInfoService {
 
-   SeqInfo queryInfoBySeqName(String seqName);
+    SeqInfo queryInfoBySeqName(String seqName);
 
-   PageInfo<SeqInfo> queryDataByPage(Page page);
+    PageInfo<SeqInfo> queryDataByPage(Page page);
 
-   default void defaultMethod(){
+    default void defaultMethod() {
 //      Collections.sort();
-   };
+    }
+
+    ;
 }

@@ -21,13 +21,13 @@ import org.springframework.jdbc.support.lob.LobHandler;
 
 @Configuration
 public class DruidConfigration {
-	
-	@Bean("lobHandler")
-	public LobHandler lobHandler() {
-		return new DruidLobHandler();
-	}
-    
-//	@Bean("dataSource")
+
+    @Bean("lobHandler")
+    public LobHandler lobHandler() {
+        return new DruidLobHandler();
+    }
+
+    //	@Bean("dataSource")
 //    @ConfigurationProperties(prefix="spring.datasource")
 //     public DataSource druidDataSource() {
 //		DruidDataSource druidDataSource = new DruidDataSource();
@@ -51,23 +51,23 @@ public class DruidConfigration {
 //		return druidDataSource;
 //     }
     @Bean("log-filter")
-	public Slf4jLogFilter logFilter() {
-		Slf4jLogFilter filter = new Slf4jLogFilter();
-		// filter.setStatementSqlFormatOption(new FormatOption(true,true,true));
-		filter.setStatementExecutableSqlLogEnable(true);
+    public Slf4jLogFilter logFilter() {
+        Slf4jLogFilter filter = new Slf4jLogFilter();
+        // filter.setStatementSqlFormatOption(new FormatOption(true,true,true));
+        filter.setStatementExecutableSqlLogEnable(true);
         filter.setResultSetLogEnabled(false);
-		filter.setConnectionLogEnabled(false);
-		filter.setStatementLogEnabled(false);
-		filter.setStatementParameterClearLogEnable(false);
-		filter.setStatementCreateAfterLogEnabled(false);
-		filter.setStatementCloseAfterLogEnabled(false);
-		filter.setStatementParameterSetLogEnabled(false);
-		filter.setStatementPrepareAfterLogEnabled(false);
-		return filter;
+        filter.setConnectionLogEnabled(false);
+        filter.setStatementLogEnabled(false);
+        filter.setStatementParameterClearLogEnable(false);
+        filter.setStatementCreateAfterLogEnabled(false);
+        filter.setStatementCloseAfterLogEnabled(false);
+        filter.setStatementParameterSetLogEnabled(false);
+        filter.setStatementPrepareAfterLogEnabled(false);
+        return filter;
     }
 
     @Bean("stat-filter")
-    public StatFilter statFilter(){
+    public StatFilter statFilter() {
         StatFilter filter = new StatFilter();
         //慢SQL统计，如果SQL执行时间超过一定时间则记录为慢SQL
         filter.setSlowSqlMillis(3000);
@@ -75,32 +75,36 @@ public class DruidConfigration {
         filter.setLogSlowSql(true);
         //合并SQL统计 例如select * from table t where t.id =1，会被变为select * from table t where t.id =？来统计
         filter.setMergeSql(true);
-        
+
         return filter;
     }
+
     @Bean("wallConfig")
-    public WallConfig wallConfig(){
-    	WallConfig config = new WallConfig();
-    	config.setDeleteWhereNoneCheck(true);
-    	config.setUpdateWhereNoneCheck(true);
-    	return config;
+    public WallConfig wallConfig() {
+        WallConfig config = new WallConfig();
+        config.setDeleteWhereNoneCheck(true);
+        config.setUpdateWhereNoneCheck(true);
+        return config;
     }
-    
+
     @Bean("wall-filter")
-    public WallFilter wallFilter(){
-    	WallFilter filter = new WallFilter();
-    	filter.setDbType(JdbcUtils.ORACLE);
-    	filter.setConfig(wallConfig());
-    	return filter;
+    public WallFilter wallFilter() {
+        WallFilter filter = new WallFilter();
+        filter.setDbType(JdbcUtils.ORACLE);
+        filter.setConfig(wallConfig());
+        return filter;
     }
+
     /**
      * Spring监控配置
+     *
      * @return
      */
     @Bean
-    public Advice druidSpringAdvice(){
+    public Advice druidSpringAdvice() {
         return new DruidStatInterceptor();
     }
+
     @Bean
     public Advisor druidSpringAdvisor() {
         return new RegexpMethodPointcutAdvisor("classpath: mapping/*", druidSpringAdvice());
@@ -112,7 +116,7 @@ public class DruidConfigration {
         advisorAutoProxyCreator.setProxyTargetClass(true);
         return advisorAutoProxyCreator;
     }
-    
+
     @Bean
     public ServletRegistrationBean druidServlet() {
 //        return new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
@@ -122,13 +126,13 @@ public class DruidConfigration {
         //IP黑名单 (存在共同时，deny优先于allow) : 如果满足deny的话提示:Sorry, you are not permitted to view this page.
 //        servletRegistrationBean.addInitParameter("deny","192.168.1.73");
         //登录查看信息的账号密码.
-        servletRegistrationBean.addInitParameter("loginUsername","druid");
-        servletRegistrationBean.addInitParameter("loginPassword","123456");
+        servletRegistrationBean.addInitParameter("loginUsername", "druid");
+        servletRegistrationBean.addInitParameter("loginPassword", "123456");
         //是否能够重置数据.
-		servletRegistrationBean.addInitParameter("resetEnable", "true");
+        servletRegistrationBean.addInitParameter("resetEnable", "true");
         return servletRegistrationBean;
     }
-    
+
     @Bean
     public FilterRegistrationBean filterRegistrationBean() {
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
@@ -139,5 +143,5 @@ public class DruidConfigration {
         filterRegistrationBean.addInitParameter("exclusions", "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*");
         return filterRegistrationBean;
     }
-    
+
 }

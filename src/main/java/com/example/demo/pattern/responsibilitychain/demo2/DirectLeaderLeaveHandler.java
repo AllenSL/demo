@@ -7,22 +7,22 @@ package com.example.demo.pattern.responsibilitychain.demo2;
  * @date 2019/12/2 15:25
  * @cersion 1.0
  **/
-public class DirectLeaderLeaveHandler extends AbstractLeaveHandler{
+public class DirectLeaderLeaveHandler extends AbstractLeaveHandler {
 
-    public DirectLeaderLeaveHandler(String name){
-          this.handlerName = name;
+    public DirectLeaderLeaveHandler(String name) {
+        this.handlerName = name;
     }
 
     @Override
     protected boolean handleLeaveRequest(LeaveRequest leaveRequest) {
-        if(leaveRequest.getLeaveDays() <= this.min){
+        if (leaveRequest.getLeaveDays() <= this.min) {
             System.out.println("直接主管:" + handlerName + ",已经处理;流程结束。");
             return true;
         }
 
-        if(null != this.nextHandler){
+        if (null != this.nextHandler) {
             nextHandler.handleLeaveRequest(leaveRequest);
-        }else {
+        } else {
             System.out.println("直接主管: 审批拒绝！");
         }
 

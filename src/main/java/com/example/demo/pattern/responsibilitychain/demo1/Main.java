@@ -9,7 +9,7 @@ package com.example.demo.pattern.responsibilitychain.demo1;
  **/
 public class Main {
 
-    public static void runChain(){
+    public static void runChain() {
         Task task3 = new Task1();
         Task task2 = new Task2(task3);
         Task task1 = new Task3(task2);

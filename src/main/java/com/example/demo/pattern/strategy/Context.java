@@ -11,12 +11,12 @@ public class Context {
 
     private SOperation sOperation;
 
-    public void setContext(SOperation sOperation){
+    public void setContext(SOperation sOperation) {
         this.sOperation = sOperation;
     }
 
-    public int calculate(int a,int b){
-       return sOperation.apply(a,b);
+    public int calculate(int a, int b) {
+        return sOperation.apply(a, b);
     }
 }
    

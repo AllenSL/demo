@@ -6,6 +6,7 @@ import org.apache.commons.beanutils.PropertyUtils;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+
 @Slf4j
 public class StringUtils {
 
@@ -43,6 +44,7 @@ public class StringUtils {
 
     /**
      * 从对象中取得指定对象的值
+     *
      * @param obj  对象
      * @param name 字段名称
      * @return
@@ -53,29 +55,29 @@ public class StringUtils {
 
         if (obj instanceof Map) {
             result = (Object) ((Map) obj).get(name);
-            if(result == null) {
+            if (result == null) {
                 result = (Object) ((Map) obj).get(name.toLowerCase());
             }
-            if(result == null) {
+            if (result == null) {
                 result = (Object) ((Map) obj).get(name.toUpperCase());
             }
         } else {
 
-            try{
-                if(PropertyUtils.isReadable(obj, name)){
+            try {
+                if (PropertyUtils.isReadable(obj, name)) {
 
-                    result =  PropertyUtils.getProperty( obj, name );
+                    result = PropertyUtils.getProperty(obj, name);
 
-                }else if(PropertyUtils.isReadable(obj, name.toLowerCase())){
+                } else if (PropertyUtils.isReadable(obj, name.toLowerCase())) {
 
-                    result =  PropertyUtils.getProperty( obj, name.toLowerCase() );
+                    result = PropertyUtils.getProperty(obj, name.toLowerCase());
 
-                }else if(PropertyUtils.isReadable(obj, name.toUpperCase())){
+                } else if (PropertyUtils.isReadable(obj, name.toUpperCase())) {
 
-                    result =  PropertyUtils.getProperty( obj, name.toUpperCase() );
+                    result = PropertyUtils.getProperty(obj, name.toUpperCase());
                 }
-            }catch(Exception ex){
-                log.error("错误："+obj.getClass().getName()+"取不到"+name+"#");
+            } catch (Exception ex) {
+                log.error("错误：" + obj.getClass().getName() + "取不到" + name + "#");
             }
 
         }

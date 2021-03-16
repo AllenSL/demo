@@ -8,8 +8,12 @@ import com.example.demo.mybatis.pojo.BillResolve;
 public interface IBillResolveService extends IService<BillResolve> {
 
     BillResolve queryByPrimaryKey(Long transNo);
-    int insertBillResolve( BillResolve billResolve );
-    int updateBillResolve( BillResolve billResolve );
-    int deleteBillResolve( BillResolve billResolve );
-    IPage getBillResolvePage(Page page, String budgetLevel );
+
+    int insertBillResolve(BillResolve billResolve);
+
+    int updateBillResolve(BillResolve billResolve);
+
+    int deleteBillResolve(BillResolve billResolve);
+
+    IPage getBillResolvePage(Page page, String budgetLevel);
 }

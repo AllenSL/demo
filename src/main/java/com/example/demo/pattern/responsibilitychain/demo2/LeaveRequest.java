@@ -18,10 +18,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class LeaveRequest {
 
-    /**请假天数**/
+    /**
+     * 请假天数
+     **/
     private Integer LeaveDays;
 
-    /**请假人姓名**/
+    /**
+     * 请假人姓名
+     **/
     private String name;
 
 }

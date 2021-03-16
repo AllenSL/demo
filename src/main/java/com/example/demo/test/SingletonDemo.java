@@ -33,8 +33,8 @@ public class SingletonDemo {
         list.add(8);
         list.add(2);
         int temp = 0;
-        for (int i = 0;i <list.size()-1;i ++){
-            for (int j = 1; j< list.size()- i;j ++){
+        for (int i = 0; i < list.size() - 1; i++) {
+            for (int j = 1; j < list.size() - i; j++) {
                 Integer a;
                 if (list.get(j - 1).compareTo(list.get(j)) > 0) { // 比较两个整数的大小
                     a = list.get(j - 1);

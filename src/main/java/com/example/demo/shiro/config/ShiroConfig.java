@@ -32,7 +32,7 @@ public class ShiroConfig {
      * 会话可以是普通JavaSE环境的，也可以是如Web环境的；
      */
     @Bean("sessionManager")
-    public SessionManager sessionManager(){
+    public SessionManager sessionManager() {
         DefaultWebSessionManager sessionManager = new DefaultWebSessionManager();
         //设置session过期时间
         sessionManager.setGlobalSessionTimeout(60 * 60 * 1000);

@@ -12,9 +12,9 @@ public class StrategyPatternDemo {
     public static void main(String[] args) {
         Context context = new Context();
         context.setContext(new AddOperation());
-        System.out.println(context.calculate(1,4));
+        System.out.println(context.calculate(1, 4));
         context.setContext(new SubtractionOperation());
-        System.out.println(context.calculate(3,2));
+        System.out.println(context.calculate(3, 2));
     }
 
 }

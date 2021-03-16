@@ -77,7 +77,7 @@ public class FFMpegUtil {
     /**
      * 执行指令
      *
-     * @param cmd    执行指令
+     * @param cmd 执行指令
      */
     static public List<String> exec(List<String> cmd) {
         try {
@@ -155,7 +155,7 @@ public class FFMpegUtil {
      * @return
      */
     public static String getStringTime(int time) {
-            //小时
+        //小时
         int h = time / 3600;
         int m = (time % 3600) / 60;
         int s = (time % 3600) % 60;
@@ -200,7 +200,6 @@ public class FFMpegUtil {
 ////            start = +duration;
 ////        }
 ////    }
-
     public static void split(String inputfile, String outputfile, int start, int duration) {
         try {
             List<String> cmd = new ArrayList<String>();
@@ -231,11 +230,11 @@ public class FFMpegUtil {
     }
 
     @PostMapping("/qqq")
-    public AudioInfo test(MultipartFile file){
+    public AudioInfo test(MultipartFile file) {
         String localFile = createLocalFile(File_PATH, file);
         String ffmepgPath = "D:\\person\\commonTools\\ffmpeg\\bin\\ffmpeg.exe";
         String ffprobePath = "D:\\person\\commonTools\\ffmpeg\\bin\\ffprobe.exe";
-        log.info("path:"+localFile);
+        log.info("path:" + localFile);
 
         AudioInfo audioInfo = FFMpegUtil.getAudioInfo(ffprobePath, localFile);
         File file1 = new File(localFile);
@@ -250,16 +249,17 @@ public class FFMpegUtil {
 
     /**
      * 通过上传的文件名，缓冲到本地，后面才能解压、验证
+     *
      * @param filePath 临时缓冲到本地的目录
      * @param file
      */
-    public String createLocalFile(String filePath,MultipartFile file) {
+    public String createLocalFile(String filePath, MultipartFile file) {
         File localFile = new File(filePath);
         //先创建目录
         localFile.mkdirs();
 
         String originalFilename = file.getOriginalFilename();
-        String path = filePath+"/"+originalFilename;
+        String path = filePath + "/" + originalFilename;
 
         log.info("createLocalFile path = {}", path);
 
@@ -268,18 +268,18 @@ public class FFMpegUtil {
         InputStream in = null;
         try {
 
-            if(localFile.exists()){
+            if (localFile.exists()) {
                 //如果文件存在删除文件
                 boolean delete = localFile.delete();
-                if (delete == false){
-                    log.error("Delete exist file \"{}\" failed!!!",path,new Exception("Delete exist file \""+path+"\" failed!!!"));
+                if (delete == false) {
+                    log.error("Delete exist file \"{}\" failed!!!", path, new Exception("Delete exist file \"" + path + "\" failed!!!"));
                 }
             }
             //创建文件
-            if(!localFile.exists()){
+            if (!localFile.exists()) {
                 //如果文件不存在，则创建新的文件
                 localFile.createNewFile();
-                log.info("Create file successfully,the file is {}",path);
+                log.info("Create file successfully,the file is {}", path);
             }
 
             //创建文件成功后，写入内容到文件里
@@ -289,7 +289,7 @@ public class FFMpegUtil {
 
             int len = -1;
 
-            while((len = in.read(bytes)) != -1) {
+            while ((len = in.read(bytes)) != -1) {
                 fos.write(bytes, 0, len);
             }
 
@@ -299,12 +299,12 @@ public class FFMpegUtil {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
-                if(fos != null) {
+                if (fos != null) {
                     fos.close();
                 }
-                if(in != null) {
+                if (in != null) {
                     in.close();
                 }
             } catch (IOException e) {

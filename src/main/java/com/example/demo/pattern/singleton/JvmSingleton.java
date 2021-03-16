@@ -9,13 +9,14 @@ package com.example.demo.pattern.singleton;
  **/
 public class JvmSingleton {
 
-    private static class LazyHolder{
+    private static class LazyHolder {
         public static final JvmSingleton JVM_SINGLETON = new JvmSingleton();
     }
 
-    private JvmSingleton(){}
+    private JvmSingleton() {
+    }
 
-    public static JvmSingleton getInstance(){
+    public static JvmSingleton getInstance() {
         return LazyHolder.JVM_SINGLETON;
     }
 }

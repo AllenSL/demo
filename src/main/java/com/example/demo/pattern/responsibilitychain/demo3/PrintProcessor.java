@@ -13,15 +13,15 @@ public class PrintProcessor extends Thread implements IRequestProcessor {
 
     LinkedBlockingDeque<Request> requests = new LinkedBlockingDeque<>();
 
-    private  IRequestProcessor nextProcessor;
+    private IRequestProcessor nextProcessor;
 
     private volatile boolean isFinish = false;
 
-    public void shutDown(){
+    public void shutDown() {
         isFinish = true;
     }
 
-    public PrintProcessor(){
+    public PrintProcessor() {
 
     }
 
@@ -36,16 +36,16 @@ public class PrintProcessor extends Thread implements IRequestProcessor {
     }
 
 
-
     @Override
-    public void run(){
+    public void run() {
         System.out.println("while PrintProcessor .....");
-        while (!isFinish){
+        while (!isFinish) {
             try {
                 Request request = requests.take();
-                System.out.println("PrintProcessor :"+request);
-                if(nextProcessor != null){
-                nextProcessor.process(request);}
+                System.out.println("PrintProcessor :" + request);
+                if (nextProcessor != null) {
+                    nextProcessor.process(request);
+                }
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

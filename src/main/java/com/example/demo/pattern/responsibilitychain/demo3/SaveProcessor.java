@@ -17,9 +17,10 @@ public class SaveProcessor extends Thread implements IRequestProcessor {
 
     private volatile boolean isFinish = false;
 
-    public void shutDown(){
+    public void shutDown() {
         isFinish = true;
     }
+
     public SaveProcessor(IRequestProcessor nextProcessor) {
         this.nextProcessor = nextProcessor;
     }
@@ -31,12 +32,12 @@ public class SaveProcessor extends Thread implements IRequestProcessor {
     }
 
     @Override
-    public void run(){
+    public void run() {
         System.out.println("while SaveProcessor .....");
-        while (!isFinish){
+        while (!isFinish) {
             try {
                 Request request = requests.take();
-                System.out.println("SaveProcessor :"+request);
+                System.out.println("SaveProcessor :" + request);
                 nextProcessor.process(request);
             } catch (InterruptedException e) {
                 e.printStackTrace();

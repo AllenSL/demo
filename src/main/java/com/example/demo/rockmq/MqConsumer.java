@@ -28,7 +28,7 @@ public class MqConsumer {
                 @Override
                 public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
                     Message msg = list.get(0);
-                    System.out.println("message: -----"+msg);
+                    System.out.println("message: -----" + msg);
                     return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
                 }
             });

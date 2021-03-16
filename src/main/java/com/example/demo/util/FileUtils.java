@@ -24,6 +24,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
 
     /**
      * 输入流转File
+     *
      * @param ins
      * @param file
      */
@@ -44,6 +45,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
 
     /**
      * 读取视频时长
+     *
      * @param source
      * @return
      */
@@ -52,27 +54,28 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
         String length = "";
         try {
             MultimediaInfo m = encoder.getInfo(source);
-            long ls = m.getDuration()/1000;
-            int hour = (int) (ls/3600);
-            int minute = (int) (ls%3600)/60;
-            int second = (int) (ls-hour*3600-minute*60);
-            if(hour >= 1){
-                length = hour+":"+minute+":"+second;
-            }else {
-                length = minute+":"+second;
+            long ls = m.getDuration() / 1000;
+            int hour = (int) (ls / 3600);
+            int minute = (int) (ls % 3600) / 60;
+            int second = (int) (ls - hour * 3600 - minute * 60);
+            if (hour >= 1) {
+                length = hour + ":" + minute + ":" + second;
+            } else {
+                length = minute + ":" + second;
             }
         } catch (Exception e) {
-            log.error("读取视频时长失败，原因：{}",e.getMessage(),e);
+            log.error("读取视频时长失败，原因：{}", e.getMessage(), e);
         }
         return length;
     }
 
     /**
      * 读取MultipartFile数据格式 视频时长
+     *
      * @param file
      * @return
      */
-    public static String ReadVideoTime(MultipartFile file){
+    public static String ReadVideoTime(MultipartFile file) {
         log.info("开始读取视频文件时长...");
         String length = null;
         File cacheFile = null;
@@ -80,16 +83,16 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
             //暂存文件
             cacheFile = new File(file.getOriginalFilename());
             //MultipartFile->file
-            inputStreamToFile(file.getInputStream(),cacheFile);
+            inputStreamToFile(file.getInputStream(), cacheFile);
             //获取时长
             length = ReadVideoTime(cacheFile);
             //延时100ms保证流完全关闭，否则缓存文件删除失败
             Thread.sleep(100);
         } catch (IOException e) {
-            log.error("读取视频时长失败，原因：{}",e.getMessage(),e);
+            log.error("读取视频时长失败，原因：{}", e.getMessage(), e);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             //删除缓存文件
             cacheFile.delete();
         }
@@ -99,35 +102,36 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
 
     /**
      * 通过上传的文件名，缓冲到本地
+     *
      * @param filePath 临时缓冲到本地的目录
      * @param file
      */
-    public static String cacheFile2Local(String filePath,MultipartFile file) {
+    public static String cacheFile2Local(String filePath, MultipartFile file) {
         File localFile = new File(filePath);
 
-        if(!localFile.exists()){
+        if (!localFile.exists()) {
             localFile.mkdirs();
         }
 
         String originalFilename = file.getOriginalFilename();
-        String path = filePath+"/"+originalFilename;
+        String path = filePath + "/" + originalFilename;
         log.debug("createLocalFile path = {}", path);
         localFile = new File(path);
         FileOutputStream fos = null;
         InputStream in = null;
         try {
-            if(localFile.exists()){
+            if (localFile.exists()) {
                 //如果文件存在删除文件
                 boolean delete = localFile.delete();
-                if (delete == false){
-                    log.error("Delete exist file \"{}\" failed!!!",path,new Exception("Delete exist file \""+path+"\" failed!!!"));
+                if (delete == false) {
+                    log.error("Delete exist file \"{}\" failed!!!", path, new Exception("Delete exist file \"" + path + "\" failed!!!"));
                 }
             }
             //创建文件
-            if(!localFile.exists()){
+            if (!localFile.exists()) {
                 //如果文件不存在，则创建新的文件
                 localFile.createNewFile();
-                log.debug("Create file successfully,the file is {}",path);
+                log.debug("Create file successfully,the file is {}", path);
             }
             //创建文件成功后，写入内容到文件里
             fos = new FileOutputStream(localFile);
@@ -136,7 +140,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
 
             int len = -1;
 
-            while((len = in.read(bytes)) != -1) {
+            while ((len = in.read(bytes)) != -1) {
                 fos.write(bytes, 0, len);
             }
             fos.flush();
@@ -145,7 +149,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             IOUtils.closeQuietly(fos);
             IOUtils.closeQuietly(in);
         }
@@ -179,8 +183,9 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
 
     /**
      * 复制文件
-     * @param oldPath  源文件路径
-     * @param newPath  目标文件路径
+     *
+     * @param oldPath 源文件路径
+     * @param newPath 目标文件路径
      */
     public static void copyFileToTargetPath(String oldPath, String newPath) {
         try {
@@ -189,21 +194,20 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
             File oldfile = new File(oldPath);
             if (oldfile.exists()) { //文件存在时
                 File file = new File(newPath);
-                if(file.exists()){
+                if (file.exists()) {
                     file.delete();
                 }
                 InputStream inStream = new FileInputStream(oldPath); //读入原文件
                 FileOutputStream fs = new FileOutputStream(newPath);
                 byte[] buffer = new byte[1444];
                 int length;
-                while ( (byteread = inStream.read(buffer)) != -1) {
+                while ((byteread = inStream.read(buffer)) != -1) {
                     bytesum += byteread; //字节数 文件大小
                     fs.write(buffer, 0, byteread);
                 }
                 inStream.close();
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("复制单个文件操作出错");
             e.printStackTrace();
 
@@ -212,26 +216,27 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
 
     /**
      * 按行读取txt文件，放入集合返回
+     *
      * @param filePath
      * @return
      */
-    public static List<String> readText(String filePath){
-             List<String> result = new ArrayList<>();
-             BufferedReader reader = null;
+    public static List<String> readText(String filePath) {
+        List<String> result = new ArrayList<>();
+        BufferedReader reader = null;
         if (filePath == null) {
             return result;
         }
         try {
-             reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(filePath))));
+            reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(filePath))));
             String temp = null;
-            while((temp = reader.readLine())!=null){
+            while ((temp = reader.readLine()) != null) {
                 result.add(temp);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             IOUtils.closeQuietly(reader);
         }
         return result;

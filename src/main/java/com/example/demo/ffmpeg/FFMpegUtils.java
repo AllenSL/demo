@@ -33,7 +33,8 @@ public class FFMpegUtils {
 
     /**
      * 获取视频/音频文件信息
-     * @param originFileUri  文件绝对路径
+     *
+     * @param originFileUri 文件绝对路径
      * @return
      */
     public static AudioInfo getFileInfo(String originFileUri) {

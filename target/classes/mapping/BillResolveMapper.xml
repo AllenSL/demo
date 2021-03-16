@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.example.demo.mybatis.mapper.BillResolveMapper" >
-  <resultMap id="BaseResultMap" type="com.example.demo.mybatis.pojo.BillResolve" >
-    <id column="TRANS_NO" property="transNo" jdbcType="BIGINT" />
-    <result column="PAY_CODE" property="payCode" jdbcType="VARCHAR" />
-    <result column="DELIMIT_BIZ_TYPE" property="delimitBizType" jdbcType="TINYINT" />
-    <result column="BUDGET_LEVEL" property="budgetLevel" jdbcType="TINYINT" />
-    <result column="DELIMIT_TYPE" property="delimitType" jdbcType="TINYINT" />
-    <result column="DELIMIT_FIN_ORG_CODE" property="delimitFinOrgCode" jdbcType="VARCHAR" />
-    <result column="DELIMIT_FIN_ORG_NAME" property="delimitFinOrgName" jdbcType="VARCHAR" />
-    <result column="DELIMIT_ADMDIV_CODE" property="delimitAdmdivCode" jdbcType="VARCHAR" />
-    <result column="DELIMIT_ADMDIV_NAME" property="delimitAdmdivName" jdbcType="VARCHAR" />
-    <result column="BATCH_NO" property="batchNo" jdbcType="VARCHAR" />
-    <result column="DELIMIT_DATE" property="delimitDate" jdbcType="VARCHAR" />
-    <result column="ADMDIV_CODE" property="admdivCode" jdbcType="VARCHAR" />
-    <result column="AGENCY_ID" property="agencyId" jdbcType="VARCHAR" />
-    <result column="AGENCY_CODE" property="agencyCode" jdbcType="VARCHAR" />
-    <result column="AGENCY_NAME" property="agencyName" jdbcType="VARCHAR" />
-    <result column="NON_TAX_CODE" property="nonTaxCode" jdbcType="VARCHAR" />
-    <result column="NON_TAX_NAME" property="nonTaxName" jdbcType="VARCHAR" />
-    <result column="NON_TAX_TYPE_CODE" property="nonTaxTypeCode" jdbcType="VARCHAR" />
-    <result column="NON_TAX_TYPE_NAME" property="nonTaxTypeName" jdbcType="VARCHAR" />
-    <result column="DELIMIT_AMOUNT" property="delimitAmount" jdbcType="DECIMAL" />
-    <result column="CUR_DELIMIT_AMOUNT" property="curDelimitAmount" jdbcType="DECIMAL" />
-    <result column="INC_EXP_CODE" property="incExpCode" jdbcType="VARCHAR" />
-    <result column="INC_EXP_NAME" property="incExpName" jdbcType="VARCHAR" />
-    <result column="PAYEE_NAME" property="payeeName" jdbcType="VARCHAR" />
-    <result column="PAYEE_ACCT_NO" property="payeeAcctNo" jdbcType="VARCHAR" />
-    <result column="PAYEE_OPBK" property="payeeOpbk" jdbcType="VARCHAR" />
-    <result column="PAYEE_ACCT_BANK_NO" property="payeeAcctBankNo" jdbcType="VARCHAR" />
-    <result column="YEAR" property="year" jdbcType="INTEGER" />
-    <result column="LAST_VER" property="lastVer" jdbcType="BIGINT" />
-    <result column="BILL_TYPE_ID" property="billTypeId" jdbcType="BIGINT" />
-    <result column="BIZ_TYPE_CODE" property="bizTypeCode" jdbcType="VARCHAR" />
-    <result column="AUDIT_STATUS" property="auditStatus" jdbcType="TINYINT" />
-    <result column="AUDIT_DATE" property="auditDate" jdbcType="TIMESTAMP" />
-    <result column="BILL_DATE" property="billDate" jdbcType="TIMESTAMP" />
-    <result column="CACULATE_STATUS" property="caculateStatus" jdbcType="TINYINT" />
-    <result column="AGENT_ORG_CODE" property="agentOrgCode" jdbcType="VARCHAR" />
-    <result column="RECORD_STATUS" property="recordStatus" jdbcType="TINYINT" />
-    <result column="RECORD_DATE" property="recordDate" jdbcType="VARCHAR" />
-    <result column="RECORD_ID" property="recordId" jdbcType="BIGINT" />
-    <result column="RECORD_NO" property="recordNo" jdbcType="BIGINT" />
-    <result column="DELIMIT_BATCH_NO" property="delimitBatchNo" jdbcType="BIGINT" />
-    <result column="SEND_PLAT_STATUS" property="sendPlatStatus" jdbcType="TINYINT" />
-    <result column="SEND_MESSAGE" property="sendMessage" jdbcType="VARCHAR" />
-    <result column="SEND_TIME" property="sendTime" jdbcType="VARCHAR" />
-    <result column="PROP_FLAG" property="propFlag" jdbcType="TINYINT" />
-    <result column="CHECK_STATUS" property="checkStatus" jdbcType="TINYINT" />
-  </resultMap>
-  <sql id="Base_Column_List" >
+<mapper namespace="com.example.demo.mybatis.mapper.BillResolveMapper">
+    <resultMap id="BaseResultMap" type="com.example.demo.mybatis.pojo.BillResolve">
+        <id column="TRANS_NO" property="transNo" jdbcType="BIGINT"/>
+        <result column="PAY_CODE" property="payCode" jdbcType="VARCHAR"/>
+        <result column="DELIMIT_BIZ_TYPE" property="delimitBizType" jdbcType="TINYINT"/>
+        <result column="BUDGET_LEVEL" property="budgetLevel" jdbcType="TINYINT"/>
+        <result column="DELIMIT_TYPE" property="delimitType" jdbcType="TINYINT"/>
+        <result column="DELIMIT_FIN_ORG_CODE" property="delimitFinOrgCode" jdbcType="VARCHAR"/>
+        <result column="DELIMIT_FIN_ORG_NAME" property="delimitFinOrgName" jdbcType="VARCHAR"/>
+        <result column="DELIMIT_ADMDIV_CODE" property="delimitAdmdivCode" jdbcType="VARCHAR"/>
+        <result column="DELIMIT_ADMDIV_NAME" property="delimitAdmdivName" jdbcType="VARCHAR"/>
+        <result column="BATCH_NO" property="batchNo" jdbcType="VARCHAR"/>
+        <result column="DELIMIT_DATE" property="delimitDate" jdbcType="VARCHAR"/>
+        <result column="ADMDIV_CODE" property="admdivCode" jdbcType="VARCHAR"/>
+        <result column="AGENCY_ID" property="agencyId" jdbcType="VARCHAR"/>
+        <result column="AGENCY_CODE" property="agencyCode" jdbcType="VARCHAR"/>
+        <result column="AGENCY_NAME" property="agencyName" jdbcType="VARCHAR"/>
+        <result column="NON_TAX_CODE" property="nonTaxCode" jdbcType="VARCHAR"/>
+        <result column="NON_TAX_NAME" property="nonTaxName" jdbcType="VARCHAR"/>
+        <result column="NON_TAX_TYPE_CODE" property="nonTaxTypeCode" jdbcType="VARCHAR"/>
+        <result column="NON_TAX_TYPE_NAME" property="nonTaxTypeName" jdbcType="VARCHAR"/>
+        <result column="DELIMIT_AMOUNT" property="delimitAmount" jdbcType="DECIMAL"/>
+        <result column="CUR_DELIMIT_AMOUNT" property="curDelimitAmount" jdbcType="DECIMAL"/>
+        <result column="INC_EXP_CODE" property="incExpCode" jdbcType="VARCHAR"/>
+        <result column="INC_EXP_NAME" property="incExpName" jdbcType="VARCHAR"/>
+        <result column="PAYEE_NAME" property="payeeName" jdbcType="VARCHAR"/>
+        <result column="PAYEE_ACCT_NO" property="payeeAcctNo" jdbcType="VARCHAR"/>
+        <result column="PAYEE_OPBK" property="payeeOpbk" jdbcType="VARCHAR"/>
+        <result column="PAYEE_ACCT_BANK_NO" property="payeeAcctBankNo" jdbcType="VARCHAR"/>
+        <result column="YEAR" property="year" jdbcType="INTEGER"/>
+        <result column="LAST_VER" property="lastVer" jdbcType="BIGINT"/>
+        <result column="BILL_TYPE_ID" property="billTypeId" jdbcType="BIGINT"/>
+        <result column="BIZ_TYPE_CODE" property="bizTypeCode" jdbcType="VARCHAR"/>
+        <result column="AUDIT_STATUS" property="auditStatus" jdbcType="TINYINT"/>
+        <result column="AUDIT_DATE" property="auditDate" jdbcType="TIMESTAMP"/>
+        <result column="BILL_DATE" property="billDate" jdbcType="TIMESTAMP"/>
+        <result column="CACULATE_STATUS" property="caculateStatus" jdbcType="TINYINT"/>
+        <result column="AGENT_ORG_CODE" property="agentOrgCode" jdbcType="VARCHAR"/>
+        <result column="RECORD_STATUS" property="recordStatus" jdbcType="TINYINT"/>
+        <result column="RECORD_DATE" property="recordDate" jdbcType="VARCHAR"/>
+        <result column="RECORD_ID" property="recordId" jdbcType="BIGINT"/>
+        <result column="RECORD_NO" property="recordNo" jdbcType="BIGINT"/>
+        <result column="DELIMIT_BATCH_NO" property="delimitBatchNo" jdbcType="BIGINT"/>
+        <result column="SEND_PLAT_STATUS" property="sendPlatStatus" jdbcType="TINYINT"/>
+        <result column="SEND_MESSAGE" property="sendMessage" jdbcType="VARCHAR"/>
+        <result column="SEND_TIME" property="sendTime" jdbcType="VARCHAR"/>
+        <result column="PROP_FLAG" property="propFlag" jdbcType="TINYINT"/>
+        <result column="CHECK_STATUS" property="checkStatus" jdbcType="TINYINT"/>
+    </resultMap>
+    <sql id="Base_Column_List">
     TRANS_NO, PAY_CODE, DELIMIT_BIZ_TYPE, BUDGET_LEVEL, DELIMIT_TYPE, DELIMIT_FIN_ORG_CODE, 
     DELIMIT_FIN_ORG_NAME, DELIMIT_ADMDIV_CODE, DELIMIT_ADMDIV_NAME, BATCH_NO, DELIMIT_DATE, 
     ADMDIV_CODE, AGENCY_ID, AGENCY_CODE, AGENCY_NAME, NON_TAX_CODE, NON_TAX_NAME, NON_TAX_TYPE_CODE, 
@@ -59,7 +59,7 @@
     RECORD_STATUS, RECORD_DATE, RECORD_ID, RECORD_NO, DELIMIT_BATCH_NO, SEND_PLAT_STATUS, 
     SEND_MESSAGE, SEND_TIME, PROP_FLAG, CHECK_STATUS
   </sql>
-  <select id="getUsersPage" resultType="java.util.List" >
+    <select id="getUsersPage" resultType="java.util.List">
     select * from nt_bill_resolve where BUDGET_LEVEL = #{budgetLevel}
   </select>
 </mapper>

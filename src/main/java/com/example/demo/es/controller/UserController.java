@@ -25,13 +25,13 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping("/addUserMsg")
-    public ResultInfo addUserMsg(@RequestBody User user){
+    public ResultInfo addUserMsg(@RequestBody User user) {
         userService.create(user);
         return ResultUtil.success();
     }
 
     @GetMapping("/findUserByName")
-    public ResultInfo findUserInfoByName(Long id){
+    public ResultInfo findUserInfoByName(Long id) {
 
         userService.findById(id);
         return ResultUtil.success();

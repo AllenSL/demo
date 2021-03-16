@@ -5,7 +5,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       driver-class-name: com.mysql.jdbc.Driver
-     # url: jdbc:mysql://192.168.241.3:3306/nontax_clear?useUnicode=true&characterEncoding=utf8&useSSL=false
+      # url: jdbc:mysql://192.168.241.3:3306/nontax_clear?useUnicode=true&characterEncoding=utf8&useSSL=false
       url: jdbc:mysql://47.92.81.14:3306/tmall?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
       username: root
       password: Offcn#wxsyb!(1sTudEnt
@@ -49,7 +49,7 @@ spring:
 #mybatis:
 #  mapper-locations: classpath:mapping/*.xml
 mybatis-plus:
-    mapper-locations: classpath:mapping/*.xml
+  mapper-locations: classpath:mapping/*.xml
 #pagehelper
 pagehelper:
   helper-dialect: mysql
@@ -99,4 +99,4 @@ rocketmq:
   # 生产者的组名
   producerId: producer-test1
 
-  consumer : consumer-test1
+  consumer: consumer-test1

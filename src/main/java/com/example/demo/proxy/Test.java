@@ -11,13 +11,13 @@ import java.lang.reflect.Proxy;
  **/
 public class Test {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 //      Proxy.newProxyInstance(HelloService.class.getClassLoader(),HelloService.class.getClass().getInterfaces(),My);
-      HelloService helloService = new HelloServiceImpl();
-      HelloService proxy = (HelloService)Proxy.newProxyInstance(HelloService.class.getClassLoader(),
-              helloService.getClass().getInterfaces(), new MyInvocationHandler(helloService));
-      proxy.name("HAHA");
-      proxy.say("nihao");
-  }
+        HelloService helloService = new HelloServiceImpl();
+        HelloService proxy = (HelloService) Proxy.newProxyInstance(HelloService.class.getClassLoader(),
+                helloService.getClass().getInterfaces(), new MyInvocationHandler(helloService));
+        proxy.name("HAHA");
+        proxy.say("nihao");
+    }
 }
    

@@ -12,7 +12,7 @@ import java.util.Arrays;
 public class DiagonalTraverse {
 
 
-    public int[] findDiagonalOrder(int[][] matrix){
+    public int[] findDiagonalOrder(int[][] matrix) {
         if (matrix.length == 0) return new int[0];
         int m = matrix.length;
         int n = matrix[0].length;
@@ -43,12 +43,12 @@ public class DiagonalTraverse {
         }
         return result;
     }
-    public static void main(String[] args)
-    {
+
+    public static void main(String[] args) {
         DiagonalTraverse dt = new DiagonalTraverse();
         int[][] a = {{1, 2, 3},
-                     {4, 5, 6},
-                     {7, 8, 9}};
+                {4, 5, 6},
+                {7, 8, 9}};
         int[] b = dt.findDiagonalOrder(a);
         System.out.println(Arrays.toString(b));
     }

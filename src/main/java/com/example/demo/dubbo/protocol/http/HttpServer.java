@@ -8,7 +8,7 @@ import org.apache.catalina.core.StandardHost;
 import org.apache.catalina.startup.Tomcat;
 
 public class HttpServer {
-    public void start(String hostname,Integer port){
+    public void start(String hostname, Integer port) {
         Tomcat tomcat = new Tomcat();
 
         Server server = tomcat.getServer();
@@ -33,8 +33,8 @@ public class HttpServer {
         service.setContainer(engine);
         service.addConnector(connector);
 
-        tomcat.addServlet(contextPath,"dispatcher",new DispatcherServlet());
-        context.addServletMappingDecoded("/*","dispatcher");
+        tomcat.addServlet(contextPath, "dispatcher", new DispatcherServlet());
+        context.addServletMappingDecoded("/*", "dispatcher");
 
 
         try {

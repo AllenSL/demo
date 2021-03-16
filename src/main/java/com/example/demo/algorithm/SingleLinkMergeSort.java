@@ -1,4 +1,5 @@
 package com.example.demo.algorithm;
+
 import com.example.demo.algorithm.Test.Node;
 
 /**
@@ -11,9 +12,8 @@ import com.example.demo.algorithm.Test.Node;
 public class SingleLinkMergeSort {
 
 
-
-    public static Node mergeSort(Node head){
-        if(head==null || head.next==null)    return head;
+    public static Node mergeSort(Node head) {
+        if (head == null || head.next == null) return head;
         //获取链表中间节点
         Node mid = getMid(head);
 
@@ -22,20 +22,20 @@ public class SingleLinkMergeSort {
         mid.next = null;
 
         //对两个子链表排序
-        return merge(mergeSort(head),mergeSort(second));
+        return merge(mergeSort(head), mergeSort(second));
     }
 
     //两个有序链表的归并
-    public static Node merge(Node l1,Node l2){
+    public static Node merge(Node l1, Node l2) {
         //辅助节点，排好序的节点将会链接到dummy后面
         Node dummy = new Node(0);
-       //tail指向最后一个排好序的节点
+        //tail指向最后一个排好序的节点
         Node tail = dummy;
-        while(l1!=null&&l2!=null){
-            if(l1.val<=l2.val){
+        while (l1 != null && l2 != null) {
+            if (l1.val <= l2.val) {
                 tail.next = l1;
                 l1 = l1.next;
-            }else{
+            } else {
                 tail.next = l2;
                 l2 = l2.next;
             }
@@ -43,7 +43,7 @@ public class SingleLinkMergeSort {
             tail = tail.next;
         }
 
-        if(l1!=null)
+        if (l1 != null)
             tail.next = l1;
         else
             tail.next = l2;
@@ -53,18 +53,17 @@ public class SingleLinkMergeSort {
     }
 
     //返回链表之间节点
-    public static Node getMid(Node head){
-        if(head==null ||head.next==null)    return head;
+    public static Node getMid(Node head) {
+        if (head == null || head.next == null) return head;
 
         Node slow = head;
         Node faster = head.next;
-        while(faster!=null&&faster.next!=null){
+        while (faster != null && faster.next != null) {
             slow = slow.next;
             faster = faster.next.next;
         }
         return slow;
     }
-
 
 
     public static void main(String[] args) {

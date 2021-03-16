@@ -12,28 +12,28 @@ import java.util.Date;
 public class BillResolve {
 
     @TableId(value = "TRANS_NO")
-    @Excel(name = "transNo",orderNum = "0",width = 20)
+    @Excel(name = "transNo", orderNum = "0", width = 20)
     private Long transNo;
 
-    @Excel(name = "payCode",orderNum = "1")
+    @Excel(name = "payCode", orderNum = "1")
     private String payCode;
 
-    @Excel(name = "delimitBizType",orderNum = "2")
+    @Excel(name = "delimitBizType", orderNum = "2")
     private Byte delimitBizType;
 
-    @Excel(name = "budgetLevel",orderNum = "3")
+    @Excel(name = "budgetLevel", orderNum = "3")
     private Byte budgetLevel;
 
-    @Excel(name = "delimitType",orderNum = "4")
+    @Excel(name = "delimitType", orderNum = "4")
     private Byte delimitType;
 
-    @Excel(name = "delimitFinOrgCode",orderNum = "5")
+    @Excel(name = "delimitFinOrgCode", orderNum = "5")
     private String delimitFinOrgCode;
 
-    @Excel(name = "delimitFinOrgName",orderNum = "6")
+    @Excel(name = "delimitFinOrgName", orderNum = "6")
     private String delimitFinOrgName;
 
-    @Excel(name = "delimitAdmdivCode",orderNum = "7")
+    @Excel(name = "delimitAdmdivCode", orderNum = "7")
     private String delimitAdmdivCode;
 
     private String delimitAdmdivName;
@@ -84,7 +84,7 @@ public class BillResolve {
 
     private Byte auditStatus;
 
-    @Excel(name = "创建日期" ,orderNum = "8",format = "yyyy-MM-dd HH:mm:ss",width = 30)
+    @Excel(name = "创建日期", orderNum = "8", format = "yyyy-MM-dd HH:mm:ss", width = 30)
     private Date auditDate;
 
     private Date billDate;
@@ -109,7 +109,7 @@ public class BillResolve {
 
     private String sendTime;
 
-//    @Excel(name = "公司LOGO", type = 2 ,width = 40 , height = 30,imageType = 1,orderNum = "9")
+    //    @Excel(name = "公司LOGO", type = 2 ,width = 40 , height = 30,imageType = 1,orderNum = "9")
     private String propFlag;
 
     private Byte checkStatus;

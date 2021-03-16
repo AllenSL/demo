@@ -12,14 +12,14 @@ public class IsPalindrome {
     public static boolean isPalindrome(int x) {
         StringBuilder stringBuilder = new StringBuilder(String.valueOf(x));
         String s = stringBuilder.toString();
-        if(s.equals(stringBuilder.reverse())){
+        if (s.equals(stringBuilder.reverse())) {
             return true;
         }
         return false;
     }
 
-  public static void main(String[] args) {
-      isPalindrome(-123);
-  }
+    public static void main(String[] args) {
+        isPalindrome(-123);
+    }
 }
    

@@ -17,7 +17,7 @@ public class PreProcessor extends Thread implements IRequestProcessor {
 
     private volatile boolean isFinish = false;
 
-    public void shutDown(){
+    public void shutDown() {
         isFinish = true;
     }
 
@@ -31,19 +31,18 @@ public class PreProcessor extends Thread implements IRequestProcessor {
 
     @Override
     public void process(Request request) {
-      requests.add(request);
+        requests.add(request);
     }
 
 
-
     @Override
-    public void run(){
+    public void run() {
         System.out.println("while PreProcessor .....");
-        while (!isFinish){
+        while (!isFinish) {
             try {
                 //阻塞式获取元素
                 Request request = requests.take();
-                System.out.println("PreProcessor :"+request);
+                System.out.println("PreProcessor :" + request);
                 nextProcessor.process(request);
             } catch (InterruptedException e) {
                 e.printStackTrace();

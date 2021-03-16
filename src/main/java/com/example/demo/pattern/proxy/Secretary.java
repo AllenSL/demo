@@ -12,7 +12,7 @@ public class Secretary implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("预约Boss");
-        Object invoke = method.invoke(boss,args);
+        Object invoke = method.invoke(boss, args);
         System.out.println("用餐结束，备注");
         return invoke;
     }

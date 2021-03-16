@@ -25,7 +25,7 @@ import java.util.Map;
 @RequestMapping("/Excel")
 public class ExcelController {
 
-//    @Autowired
+    //    @Autowired
     private IBillResolveService iBillResolveService;
 
     @GetMapping("/export")
@@ -61,9 +61,9 @@ public class ExcelController {
 
     public static void main(String[] args) {
         //创建
-        Map<String,Object> map = new HashMap<>();
+        Map<String, Object> map = new HashMap<>();
         //存
-        map.put("key","value");
+        map.put("key", "value");
         //取
         Object value = map.get("key");
 

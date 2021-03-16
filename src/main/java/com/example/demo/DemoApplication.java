@@ -40,25 +40,26 @@ public class DemoApplication {
     }
 
     @RequestMapping("/options/Index/priceIndex/BTC_USDT")
-    public ResultInfo test(){
+    public ResultInfo test() {
         String content = null;
         try {
-            content =  DemoApplication.mock();
+            content = DemoApplication.mock();
         } catch (IOException e) {
             e.printStackTrace();
         }
         JSONObject jsonObject = JSONObject.fromObject(content);
-        JSONArray a =  JSONArray.fromObject(jsonObject.get("data"));
+        JSONArray a = JSONArray.fromObject(jsonObject.get("data"));
         List<PriceIndex> list = new ArrayList<>();
-        for(int i = 0;i <a.size();i++){
-            Object o=a.get(i);
-            JSONObject jsonObject2=JSONObject.fromObject(o);
-            PriceIndex stu2=(PriceIndex)JSONObject.toBean(jsonObject2, PriceIndex.class);
+        for (int i = 0; i < a.size(); i++) {
+            Object o = a.get(i);
+            JSONObject jsonObject2 = JSONObject.fromObject(o);
+            PriceIndex stu2 = (PriceIndex) JSONObject.toBean(jsonObject2, PriceIndex.class);
             list.add(stu2);
         }
 
         return ResultUtil.success(list);
     }
+
     private static String mock() throws IOException {
         ClassPathResource resource = new ClassPathResource("mock/response/1.txt");
         String content = StringUtils.join(FileUtils.readLines(resource.getFile(), "UTF-8").toArray(), "\n");
@@ -68,32 +69,32 @@ public class DemoApplication {
 
     @MyFirstAnnotation("吃喝")
     @RequestMapping("/test")
-    public String testMyAnonocation(){
+    public String testMyAnonocation() {
         System.out.println("===========sdsdsd=");
-        HashMap<String,Integer> map = new HashMap<>();
+        HashMap<String, Integer> map = new HashMap<>();
         Iterator<Map.Entry<String, Integer>> iterator = map.entrySet().iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             Map.Entry<String, Integer> next = iterator.next();
             next.getValue();
             next.getKey();
         }
 
-        return "helloWorld"+ Inet4Address.getLoopbackAddress();
+        return "helloWorld" + Inet4Address.getLoopbackAddress();
     }
 
 //    @PostMapping("/result")
 
-//    @HystrixCommand(fallbackMethod = "defaultquery")
-    public ResultInfo query(){
-         int a = 0;
-         int b = 10/a;
+    //    @HystrixCommand(fallbackMethod = "defaultquery")
+    public ResultInfo query() {
+        int a = 0;
+        int b = 10 / a;
         System.out.println("333333333333333sssssss");
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append("<html>");
         return ResultUtil.success();
     }
 
-    public ResultInfo defaultquery(){
+    public ResultInfo defaultquery() {
         System.out.println("错误啦。。。。");
         return ResultUtil.success("there is a wrong");
     }

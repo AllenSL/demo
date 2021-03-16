@@ -9,22 +9,32 @@ package com.example.demo.pattern.responsibilitychain.demo2;
  **/
 public abstract class AbstractLeaveHandler {
 
-    /**直接主管处理的请假天数**/
+    /**
+     * 直接主管处理的请假天数
+     **/
     protected Integer min = 1;
 
-    /**部门经理处理的请假天数**/
+    /**
+     * 部门经理处理的请假天数
+     **/
     protected Integer middle = 3;
 
-    /**总经理处理的请假天数**/
+    /**
+     * 总经理处理的请假天数
+     **/
     protected Integer max = 30;
 
-    /**处理者名字**/
+    /**
+     * 处理者名字
+     **/
     protected String handlerName;
 
-    /**下一个处理者（级别更高的领导）**/
+    /**
+     * 下一个处理者（级别更高的领导）
+     **/
     protected AbstractLeaveHandler nextHandler;
 
-    protected void setNextHandler(AbstractLeaveHandler nextHandler){
+    protected void setNextHandler(AbstractLeaveHandler nextHandler) {
         this.nextHandler = nextHandler;
     }
 

@@ -35,7 +35,7 @@ public class ShiroUserController {
     private IUserService iUserService;
 
     @PostMapping(value = "/login")
-    public ResponseEntity<Void> login(@RequestBody UserDto loginInfo, HttpServletRequest request, HttpServletResponse response){
+    public ResponseEntity<Void> login(@RequestBody UserDto loginInfo, HttpServletRequest request, HttpServletResponse response) {
         Subject subject = SecurityUtils.getSubject();
         try {
             //将用户请求参数封装后，直接提交给Shiro处理

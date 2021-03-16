@@ -6,11 +6,11 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- *@className Test
- *@description TODO
- *@author ansonglin
- *@date 2021/2/4 8:50 下午
- *@cersion 1.0
+ * @author ansonglin
+ * @className Test
+ * @description TODO
+ * @date 2021/2/4 8:50 下午
+ * @cersion 1.0
  **/
 public class Test {
 
@@ -21,9 +21,9 @@ public class Test {
             lock.lock();
             System.out.println("www");
             Unsafe.getUnsafe().allocateMemory(10000000000L);
-        }catch (Exception e){
+        } catch (Exception e) {
 
-        }finally {
+        } finally {
             lock.unlock();
         }
 

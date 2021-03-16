@@ -26,15 +26,15 @@ public class WordController {
 
 
     @PostMapping("/test")
-    public JsonObject getById(JsonObject parms){
+    public JsonObject getById(JsonObject parms) {
 //        Integer id = parms.getInteger("id");
-          return userService.getById(1);
+        return userService.getById(1);
     }
 
     @PostMapping("/checkFileType")
     public void test(MultipartFile file) throws IOException {
         File file1 = new File(file.getOriginalFilename());
-        FileUtils.inputStreamToFile(file.getInputStream(),file1);
+        FileUtils.inputStreamToFile(file.getInputStream(), file1);
         Tika tika = new Tika();
         String filetype = null;
         try {

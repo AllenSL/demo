@@ -19,7 +19,7 @@ public class CommonBatchSetter implements BatchPreparedStatementSetter {
 
     private List list;
 
-    public CommonBatchSetter( String[] para, List list ){
+    public CommonBatchSetter(String[] para, List list) {
         this.para = para;
         this.list = list;
     }
@@ -30,23 +30,24 @@ public class CommonBatchSetter implements BatchPreparedStatementSetter {
     public int getBatchSize() {
         return list.size();
     }
+
     public void setValues(PreparedStatement ps, int i) throws SQLException {
         Object ob = list.get(i);
-        for(int j = 0; j < para.length; j++){
+        for (int j = 0; j < para.length; j++) {
 
-            value = this.getValue( ob, para[j] );
+            value = this.getValue(ob, para[j]);
             //如果是
-            if( null != value ){
-                ps.setObject( j+1, value );
+            if (null != value) {
+                ps.setObject(j + 1, value);
             } else {
-                ps.setString( j+1, null );
+                ps.setString(j + 1, null);
             }
 
         }
     }
 
-    protected Object getValue( Object obj, String para ){
-        return StringUtils.getProperty(obj, para );
+    protected Object getValue(Object obj, String para) {
+        return StringUtils.getProperty(obj, para);
     }
 }
    

@@ -8,12 +8,13 @@ import java.util.Map;
 
 public class Register {
 
-    private static Map<String,Map<URL,Class>> REGISTER = new HashMap<String,Map<URL,Class>>();
-    public static void register(URL url,String interfaceName,Class implClass){
-      Map<URL,Class> map = new HashMap<URL,Class>();
-      map.put(url,implClass);
-      REGISTER.put(interfaceName,map);
-      saveFile();
+    private static Map<String, Map<URL, Class>> REGISTER = new HashMap<String, Map<URL, Class>>();
+
+    public static void register(URL url, String interfaceName, Class implClass) {
+        Map<URL, Class> map = new HashMap<URL, Class>();
+        map.put(url, implClass);
+        REGISTER.put(interfaceName, map);
+        saveFile();
     }
 
     private static void saveFile() {
@@ -29,12 +30,12 @@ public class Register {
 
     }
 
-    public static Class get(URL url ,String interfaceName){
+    public static Class get(URL url, String interfaceName) {
         REGISTER = getFile();
         return REGISTER.get(interfaceName).get(url);
     }
 
-    private static Map<String,Map<URL,Class>> getFile() {
+    private static Map<String, Map<URL, Class>> getFile() {
         try {
             FileInputStream fileInputStream = new FileInputStream("D://register.txt");
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
@@ -50,11 +51,11 @@ public class Register {
     }
 
 
-    public static URL get(String interfaceName){
-      return null;
+    public static URL get(String interfaceName) {
+        return null;
     }
 
-    public static URL random(String interfaceName){
+    public static URL random(String interfaceName) {
         REGISTER = getFile();
         return REGISTER.get(interfaceName).keySet().iterator().next();
     }
