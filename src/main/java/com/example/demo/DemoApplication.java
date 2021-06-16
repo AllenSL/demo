@@ -118,5 +118,9 @@ public class DemoApplication {
     MongoTransactionManager transactionManager(MongoDbFactory dbFactory) {
         return new MongoTransactionManager(dbFactory);
     }
+
+    public void test1(){
+
+    }
 }
 
