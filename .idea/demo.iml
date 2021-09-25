@@ -86,7 +86,6 @@
     <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-client:4.3.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-common:4.3.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-remoting:4.3.1" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.29" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-all:4.1.38.Final" level="project" />
     <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-logging:4.3.1" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-tcnative-boringssl-static:2.0.25.Final" level="project" />
@@ -424,5 +423,19 @@
     <orderEntry type="library" name="Maven: cn.hutool:hutool-all:5.5.7" level="project" />
     <orderEntry type="library" name="Maven: redis.clients:jedis:2.9.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.6.2" level="project" />
+    <orderEntry type="library" name="Maven: com.gome.architect:idgenerator:0.0.2-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-framework:2.7.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-client:2.7.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.6" level="project" />
+    <orderEntry type="library" name="Maven: jline:jline:0.9.94" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty:3.7.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-recipes:2.7.1" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.4" level="project" />
+    <orderEntry type="library" name="Maven: cn.com.gome.cloud.openplatform:gmos-common-diamond:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.taobao.diamond:diamond-client:2.0.5.4.g1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.taobao.diamond:diamond-utils:2.0.5.4.g1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-lgpl:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-lgpl:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-httpclient:commons-httpclient:3.1" level="project" />
   </component>
 </module>

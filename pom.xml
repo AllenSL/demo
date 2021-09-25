@@ -378,6 +378,16 @@
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.gome.architect</groupId>
+            <artifactId>idgenerator</artifactId>
+            <version>0.0.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.com.gome.cloud.openplatform</groupId>
+            <artifactId>gmos-common-diamond</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <profiles>
