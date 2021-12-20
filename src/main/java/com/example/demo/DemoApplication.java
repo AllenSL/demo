@@ -4,6 +4,7 @@ import com.example.demo.base.annotation.MyFirstAnnotation;
 import com.example.demo.base.util.ResultInfo;
 import com.example.demo.base.util.ResultUtil;
 import com.example.demo.mybatis.pojo.PriceIndex;
+import com.gome.platform.hotkey.client.ClientStarter;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.apache.commons.io.FileUtils;
@@ -119,8 +120,10 @@ public class DemoApplication {
         return new MongoTransactionManager(dbFactory);
     }
 
-    public void test1(){
-
+    public void init(){
+        ClientStarter.Builder builder = new ClientStarter.Builder();
+        ClientStarter starter = builder.build();
+        starter.startPipeline();
     }
 }
 

@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -147,4 +149,14 @@ public class ZipUtils {
 ////        FileOutputStream fos2= new FileOutputStream(new File("c:/mytest02.zip"));
 ////        ZipUtils.toZip(fileList, fos2);
 //    }
+
+    public static void main(String[] args)
+    {
+        String str ="中华人民共和国，简称(中国)。";
+          String regexx = "(?<=\\()([^\\]]+)(?=\\))";//匹配小括号
+        Matcher mat = Pattern.compile(regexx).matcher(str);//此处是中文输入的（）
+        while(mat.find()){
+            System.out.println(mat.group());
+        }
+    }
 }

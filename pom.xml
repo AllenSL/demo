@@ -28,6 +28,8 @@
         <pagehelper-boot.version>1.2.3</pagehelper-boot.version>
         <shiro.version>1.4.0</shiro.version>
         <jwt.auth0.version>3.2.0</jwt.auth0.version>
+        <!--properties节点中设置docker镜像的前缀“springboot”-->
+        <docker.image.prefix>springio</docker.image.prefix>
     </properties>
 
     <dependencies>
@@ -388,6 +390,16 @@
             <artifactId>gmos-common-diamond</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.gome.platform.hotkey</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.4-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gome.platform.hotkey</groupId>
+            <artifactId>hotkey-client</artifactId>
+            <version>0.0.4-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <profiles>
@@ -433,6 +445,24 @@
                     <verbose>true</verbose>
                 </configuration>
             </plugin>
+            <!-- tag::plugin[] -->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>0.4.13</version>
+                <configuration>
+                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+                    <dockerDirectory>src/main/docker</dockerDirectory>
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                </configuration>
+            </plugin>
+            <!-- end::plugin[] -->
         </plugins>
     </build>
 
