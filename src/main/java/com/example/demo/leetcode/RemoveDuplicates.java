@@ -13,19 +13,49 @@ public class RemoveDuplicates {
 //        }
 //    }
 
-    public int removeDuplicates(int[] nums) {
-        if (nums == null || nums.length == 0) {
+//    public int removeDuplicates(int[] nums) {
+//        if (nums == null || nums.length == 0) {
+//            return 0;
+//        }
+//        int i = 0, j = 0;
+//        while (j < nums.length) {
+//            if (nums[i] != nums[j]) {
+//                nums [++i] = nums[j];
+//            }
+//            j++;
+//        }
+//        return ++i;
+//    }
+
+
+
+    public static int removeDuplicates(int[] nums){
+        if(nums.length == 0){
             return 0;
-        }
-        int i = 0, j = 0;
-        while (j < nums.length) {
-            if (nums[i] != nums[j]) {
-                nums[++i] = nums[j];
+        };
+        int i = 0,j=0;
+        while(j < nums.length){
+            if(nums[i] != nums[j]){
+                nums[i] = nums[j];
+                i++;
             }
             j++;
         }
-        return ++i;
+        return i;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     public static int numRescueBoats(int[] people, int limit) {
@@ -42,7 +72,10 @@ public class RemoveDuplicates {
     }
 
     public static void main(String[] args) {
-        int[] a = {3,2,2,1};
-        System.out.println(numRescueBoats(a, 3));
+        int[] a = {1,1,2};
+        System.out.println(removeDuplicates(a));
+
+        int i = 0;
+        System.out.println();
     }
 }

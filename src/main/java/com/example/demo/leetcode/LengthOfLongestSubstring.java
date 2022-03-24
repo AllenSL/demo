@@ -1,7 +1,6 @@
 package com.example.demo.leetcode;
 
 import java.util.HashSet;
-import java.util.Set;
 
 /**
  * @author ansonglin
@@ -16,23 +15,22 @@ import java.util.Set;
 public class LengthOfLongestSubstring {
 
     private static int lengthOfLongestSubstring(String s) {
-        Set<Character> set = new HashSet<>();
-        int start = 0;
-        int max = 0;
-        int index = 0;
-        while (index < s.length()) {
-            char ch = s.charAt(index);
-            if (set.contains(ch)) {
-                while (set.contains(ch)) {
-                    set.remove(s.charAt(start));
-                    start++;
-                }
+        HashSet<Character> set = new HashSet();
+        int length = s.length();
+        int rk= -1,result = 0;
+        for (int i = 0; i < length; i++) {
+            if(i > 0){
+                set.remove(s.charAt(i-1));
             }
-            max = Math.max(max, index - start + 1);
-            set.add(ch);
-            index++;
+
+            while (rk+1<length && !set.contains(s.charAt(rk+1)) ){
+                set.add(s.charAt(rk+1));
+                ++rk;
+            }
+
+            result = Math.max(result,rk-i+1);
         }
-        return max;
+        return result;
     }
 
     public static void main(String[] args) {

@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe547d9f-928e-4ca0-9bd3-484c37062f06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Dockfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/push/XiaoMiPush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/push/XiaoMiPush.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/util/ZipUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/util/ZipUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/LengthOfLongestSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/LengthOfLongestSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/RemoveDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/RemoveDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jar/JFoolNLTK-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jar/MiPush_SDK_Server_2_2_21.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jar/json-simple-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,9 +156,9 @@
       <recent name="com.example.demo.algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ZipUtils">
-    <configuration name="归并排序" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.algorithm.归并排序" />
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
+    <configuration name="有序数组求和" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.algorithm.有序数组求和" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
@@ -168,13 +171,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.netty.HttpServer" />
+    <configuration name="LengthOfLongestSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.LengthOfLongestSubstring" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.netty.*" />
+          <option name="PATTERN" value="com.example.demo.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -196,6 +199,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StrStr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.StrStr" />
+      <module name="demo" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ZipUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.util.ZipUtils" />
       <module name="demo" />
@@ -203,34 +220,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.demo.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="快速排序" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.algorithm.快速排序" />
-      <module name="demo" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="有序数组求和" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.algorithm.有序数组求和" />
-      <module name="demo" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -258,27 +247,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ab" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.ab" />
-      <module name="demo" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -343,22 +320,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.归并排序" />
-      <item itemvalue="Application.HttpServer" />
+      <item itemvalue="Application.有序数组求和" />
       <item itemvalue="Application.RemoveDuplicates" />
-      <item itemvalue="Application.ab" />
       <item itemvalue="Application.ZipUtils" />
+      <item itemvalue="Application.StrStr" />
+      <item itemvalue="Application.LengthOfLongestSubstring" />
       <item itemvalue="JUnit.TestIDgenerator.testIDgenerator" />
       <item itemvalue="Remote JVM Debug.emp" />
       <item itemvalue="Spring Boot.DemoApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LengthOfLongestSubstring" />
+        <item itemvalue="Application.StrStr" />
+        <item itemvalue="Application.RemoveDuplicates" />
         <item itemvalue="Application.ZipUtils" />
         <item itemvalue="JUnit.TestIDgenerator.testIDgenerator" />
-        <item itemvalue="Application.ab" />
-        <item itemvalue="Application.RemoveDuplicates" />
-        <item itemvalue="Application.HttpServer" />
       </list>
     </recent_temporary>
   </component>
@@ -551,7 +528,12 @@
       <workItem from="1638001548508" duration="2332000" />
       <workItem from="1639729405014" duration="3093000" />
       <workItem from="1639965976885" duration="347000" />
-      <workItem from="1640001621888" duration="1084000" />
+      <workItem from="1640001621888" duration="3897000" />
+      <workItem from="1641386722775" duration="2960000" />
+      <workItem from="1641780922497" duration="14000" />
+      <workItem from="1641903595819" duration="2779000" />
+      <workItem from="1641955949076" duration="7187000" />
+      <workItem from="1643248385482" duration="482000" />
     </task>
     <task id="LOCAL-00001" summary="0.0">
       <created>1557752645396</created>
@@ -644,7 +626,21 @@
       <option name="project" value="LOCAL" />
       <updated>1632548391582</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="新增双指针leatcode算法题">
+      <created>1640002769334</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1640002769334</updated>
+    </task>
+    <task id="LOCAL-00015" summary="新增双指针leatcode算法题">
+      <created>1640002881878</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1640002881878</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -702,7 +698,8 @@
     <MESSAGE value="添加小米push推送Demo" />
     <MESSAGE value="添加责任链设计模式案例" />
     <MESSAGE value="添加leatcode算法题" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加leatcode算法题" />
+    <MESSAGE value="新增双指针leatcode算法题" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增双指针leatcode算法题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -901,6 +898,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/util/ZipUtils.java</url>
           <line>157</line>
           <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/RemoveDuplicates.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/StrStr.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/LengthOfLongestSubstring.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="197" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
