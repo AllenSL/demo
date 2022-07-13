@@ -35,7 +35,7 @@ public class ReverseList {
         listNode.next = new ListNode(4);
         listNode.next.next = new ListNode(3);
         listNode.next.next.next = null;
-        ListNode listNode1 = n(listNode);
+        ListNode listNode1 = reverseList(listNode);
         System.out.println(listNode1);
 
     }
