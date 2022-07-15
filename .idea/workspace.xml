@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe547d9f-928e-4ca0-9bd3-484c37062f06" name="Default Changelist" comment="新增双指针leatcode算法题">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/LRUCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/MyAoti.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/convert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/letterCombinations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/merge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/reverseList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/trap.java" afterDir="false" />
+    <list default="true" id="fe547d9f-928e-4ca0-9bd3-484c37062f06" name="Default Changelist" comment="新增leatcode算法题">
+      <change afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/algorithm/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/algorithm/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/algorithm/ReverseList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/algorithm/ReverseList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/addTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/addTwoNumbers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +121,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="leetcode.id" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RebelAgentSelection">
@@ -500,6 +491,8 @@
       <workItem from="1656857455215" duration="4461000" />
       <workItem from="1656899834190" duration="7238000" />
       <workItem from="1657096085537" duration="3353000" />
+      <workItem from="1657713588263" duration="679000" />
+      <workItem from="1657785798168" duration="1871000" />
     </task>
     <task id="LOCAL-00001" summary="0.0">
       <created>1557752645396</created>
@@ -620,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656318078283</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="新增leatcode算法题">
+      <created>1657713610493</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1657713610493</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -691,7 +691,8 @@
     <MESSAGE value="添加责任链设计模式案例" />
     <MESSAGE value="添加leatcode算法题" />
     <MESSAGE value="新增双指针leatcode算法题" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增双指针leatcode算法题" />
+    <MESSAGE value="新增leatcode算法题" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增leatcode算法题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
