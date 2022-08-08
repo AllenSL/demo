@@ -5,6 +5,7 @@ import com.example.demo.base.util.ResultInfo;
 import com.example.demo.base.util.ResultUtil;
 import com.example.demo.mybatis.pojo.PriceIndex;
 import com.gome.platform.hotkey.client.ClientStarter;
+import lombok.extern.slf4j.Slf4j;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.apache.commons.io.FileUtils;
@@ -30,7 +31,7 @@ import java.io.IOException;
 import java.net.Inet4Address;
 import java.util.*;
 
-
+@Slf4j
 @SpringBootApplication
 @RestController
 @EnableScheduling
@@ -41,8 +42,7 @@ public class DemoApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(DemoApplication.class, args);
         Environment environment = context.getBean(Environment.class);
-
-        System.out.println("启动端口: " + environment.getProperty("local.server.port"));
+       log.info("应用启动成功，启动端口: {}" ,environment.getProperty("local.server.port"));
     }
 
     @RequestMapping("/options/Index/priceIndex/BTC_USDT")

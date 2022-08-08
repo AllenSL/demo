@@ -25,11 +25,11 @@ public class CountDownLatchTest implements Runnable {
     @Override
     public void run() {
         try {
-            Thread.sleep(3000);
+            Thread.sleep(8000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println(Thread.currentThread() + "ok");
+        System.out.println(Thread.currentThread() + "执行完事啦");
         cd.countDown();
     }
 
@@ -42,6 +42,7 @@ public class CountDownLatchTest implements Runnable {
         executor.execute(cdt2);
         cd.await();
         System.out.println("main 开始执行");
+        executor.shutdown();
     }
 }
    

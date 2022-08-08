@@ -10,9 +10,9 @@ public class Client {
         Observer os2 = new ObserverA();
         Observer os3 = new ObserverA();
 
-        concreteSubject.register(os1);
         concreteSubject.register(os2);
         concreteSubject.register(os3);
+        concreteSubject.register(os1);
 
         concreteSubject.setMyState(300);
 

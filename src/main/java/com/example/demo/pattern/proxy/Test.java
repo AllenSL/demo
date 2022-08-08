@@ -9,7 +9,9 @@ public class Test {
 
     public static void main(String[] args) {
         Secretary secretary = new Secretary();
-        Function function = (Function) Proxy.newProxyInstance(Test.class.getClassLoader(), new Class[]{Function.class}, secretary);
+        Function function =
+                (Function)
+                        Proxy.newProxyInstance(Test.class.getClassLoader(), new Class[]{Function.class}, secretary);
         function.eatFood();
     }
 }

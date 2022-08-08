@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe547d9f-928e-4ca0-9bd3-484c37062f06" name="Default Changelist" comment="新增leatcode算法题">
-      <change afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/algorithm/抽奖.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/StackIInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/StackIInterfaceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/全排列.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/juc/CountDownLatchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/juc/CountDownLatchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/builder/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/builder/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/builder/HighBuilding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/builder/HighBuilding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/factory/OperatorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/factory/OperatorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/observer/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/observer/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/proxy/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/proxy/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/responsibilitychain/demo3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/responsibilitychain/demo3/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,18 +128,18 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/example/demo/transaction" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../团抢拼直降API/pop-promotion-rest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="leetcode.id" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RebelAgentSelection">
-    <selection>jr</selection>
+    <selection>xr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -146,9 +160,93 @@
       <recent name="com.example.demo.algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.merge">
-    <configuration name="ReverseList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.algorithm.ReverseList" />
+  <component name="RunManager" selected="Application.StackIInterfaceImpl">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.pattern.observer.Client" />
+      <module name="demo" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.pattern.observer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LSTMLexicalParserDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.foolnltk.LSTMLexicalParserDemo" />
+      <module name="demo" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.foolnltk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StackIInterfaceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.StackIInterfaceImpl" />
+      <module name="demo" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.pattern.responsibilitychain.demo3.Test" />
+      <module name="demo" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.pattern.responsibilitychain.demo3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.pattern.proxy.Test" />
+      <module name="demo" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.pattern.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="最长连续数组" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.algorithm.最长连续数组" />
+      <module name="demo" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="抽奖" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.algorithm.抽奖" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
@@ -167,58 +265,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="convert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.convert" />
-      <module name="demo" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="merge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.merge" />
-      <module name="demo" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="reverseList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.reverseList" />
-      <module name="demo" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="trap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.trap" />
-      <module name="demo" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -265,21 +318,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.trap" />
-      <item itemvalue="Application.convert" />
-      <item itemvalue="Application.reverseList" />
-      <item itemvalue="Application.ReverseList" />
-      <item itemvalue="Application.merge" />
       <item itemvalue="Remote JVM Debug.emp" />
       <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Application.LSTMLexicalParserDemo" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.Test (1)" />
+      <item itemvalue="Application.StackIInterfaceImpl" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.merge" />
-        <item itemvalue="Application.ReverseList" />
-        <item itemvalue="Application.reverseList" />
-        <item itemvalue="Application.convert" />
-        <item itemvalue="Application.trap" />
+        <item itemvalue="Application.StackIInterfaceImpl" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.LSTMLexicalParserDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -492,7 +545,11 @@
       <workItem from="1656899834190" duration="7238000" />
       <workItem from="1657096085537" duration="3353000" />
       <workItem from="1657713588263" duration="679000" />
-      <workItem from="1657785798168" duration="1871000" />
+      <workItem from="1657785798168" duration="11118000" />
+      <workItem from="1659516571879" duration="466000" />
+      <workItem from="1659519027191" duration="2214000" />
+      <workItem from="1659528230306" duration="2252000" />
+      <workItem from="1659581672127" duration="20637000" />
     </task>
     <task id="LOCAL-00001" summary="0.0">
       <created>1557752645396</created>
@@ -620,7 +677,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657713610493</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="新增leatcode算法题">
+      <created>1657853009238</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1657853009238</updated>
+    </task>
+    <task id="LOCAL-00020" summary="新增leatcode算法题">
+      <created>1657853034018</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1657853034018</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -774,7 +845,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/pattern/responsibilitychain/demo3/Test.java</url>
-          <line>32</line>
+          <line>31</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -971,6 +1042,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/merge.java</url>
           <line>17</line>
           <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/全排列.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/juc/CountDownLatchTest.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="228" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/StackIInterfaceImpl.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="231" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

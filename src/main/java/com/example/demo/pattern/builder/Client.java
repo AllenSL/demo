@@ -6,7 +6,7 @@ public class Client {
         HouseDirector houseDirector =
                 new HouseDirector(
                         new CommonHouse(
-                                new House("1","2","3")));
+                                new House("1","2","23")));
         House house = houseDirector.constructHourse();
         System.out.println(house);
     }

@@ -22,7 +22,6 @@ public class Test {
         saveProcessor.start();
         iRequestProcessor = new PreProcessor(saveProcessor);
         ((PreProcessor) iRequestProcessor).start();
-
     }
 
     public static void main(String[] args) {

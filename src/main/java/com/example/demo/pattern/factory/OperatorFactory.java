@@ -25,7 +25,9 @@ public class OperatorFactory {
     }
 
     public static void main(String[] args) {
-        Operation operation = OperatorFactory.getOperation("add").orElseThrow(() -> new IllegalArgumentException("Invalid Operator"));
+        Operation operation =
+                OperatorFactory.getOperation("add")
+                        .orElseThrow(() -> new IllegalArgumentException("Invalid Operator"));
         operation.apply(1, 4);
     }
 }
