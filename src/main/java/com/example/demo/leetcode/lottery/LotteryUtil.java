@@ -48,11 +48,38 @@ public class LotteryUtil {
 
        Random random = new Random();
        double d = random.nextDouble() * maxEle;
-    return 0;
+       if(d == 0d){
+           d = random.nextDouble()*maxEle;
+       }
+       for (int i = 0; i < lotteryList.size(); i++) {
+           if(lotteryList.get(i).isContainKey(d)){
+               index = i;
+               break;
+           }
+       }
+       if(index == -1){
+           throw new RuntimeException("概率集合设置不合理");
+       }
+       return index;
    }
 
+    public List<ContinueList> getLotteryList() {
+        return lotteryList;
+    }
+
+    public void setLotteryList(List<ContinueList> lotteryList) {
+        this.lotteryList = lotteryList;
+    }
+
+    public double getMaxEle() {
+        return maxEle;
+    }
+
+    public void setMaxEle(double maxEle) {
+        this.maxEle = maxEle;
+    }
+
     public static void main(String[] args) {
-        Random rd = new Random();
     }
 
 }
