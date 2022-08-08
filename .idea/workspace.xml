@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe547d9f-928e-4ca0-9bd3-484c37062f06" name="Default Changelist" comment="新增leatcode算法题">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/algorithm/抽奖.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/StackIInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/StackIInterfaceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/全排列.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/juc/CountDownLatchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/juc/CountDownLatchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/builder/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/builder/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/builder/HighBuilding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/builder/HighBuilding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/factory/OperatorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/factory/OperatorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/observer/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/observer/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/proxy/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/proxy/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/responsibilitychain/demo3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/responsibilitychain/demo3/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/ContinueList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/LotteryUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -549,7 +535,7 @@
       <workItem from="1659516571879" duration="466000" />
       <workItem from="1659519027191" duration="2214000" />
       <workItem from="1659528230306" duration="2252000" />
-      <workItem from="1659581672127" duration="20637000" />
+      <workItem from="1659581672127" duration="21606000" />
     </task>
     <task id="LOCAL-00001" summary="0.0">
       <created>1557752645396</created>
@@ -691,7 +677,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657853034018</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="新增leatcode算法题">
+      <created>1659960094001</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1659960094001</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
