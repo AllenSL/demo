@@ -32,7 +32,6 @@ public class UserController {
 
     @GetMapping("/findUserByName")
     public ResultInfo findUserInfoByName(Long id) {
-
         userService.findById(id);
         return ResultUtil.success();
     }

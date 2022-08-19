@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe547d9f-928e-4ca0-9bd3-484c37062f06" name="Default Changelist" comment="新增leatcode算法题">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/括号生成.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/组合.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/LotteryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/LotteryUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/es/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/es/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/LotteryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/hah.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +150,21 @@
       <recent name="com.example.demo.algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test (2)">
+  <component name="RunManager" selected="Application.StackIInterfaceImpl">
+    <configuration name="括号生成" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.括号生成" />
+      <module name="demo" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LotteryUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.lottery.LotteryUtil" />
       <module name="demo" />
@@ -177,20 +193,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.pattern.responsibilitychain.demo3.Test" />
-      <module name="demo" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.pattern.responsibilitychain.demo3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.lottery.Test" />
       <module name="demo" />
@@ -205,13 +207,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.pattern.proxy.Test" />
+    <configuration name="组合" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.组合" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.pattern.proxy.*" />
+          <option name="PATTERN" value="com.example.demo.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -219,13 +221,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="最长连续数组" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.algorithm.最长连续数组" />
+    <configuration name="递归" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.递归" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.algorithm.*" />
+          <option name="PATTERN" value="com.example.demo.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -249,17 +251,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <shortenClasspath name="CLASSPATH_FILE" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -306,21 +297,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Remote JVM Debug.emp" />
-      <item itemvalue="Spring Boot.DemoApplication" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.Test (1)" />
       <item itemvalue="Application.StackIInterfaceImpl" />
       <item itemvalue="Application.LotteryUtil" />
       <item itemvalue="Application.Test (2)" />
+      <item itemvalue="Application.括号生成" />
+      <item itemvalue="Remote JVM Debug.emp" />
+      <item itemvalue="Spring Boot.DemoApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test (2)" />
+        <item itemvalue="Application.括号生成" />
         <item itemvalue="Application.LotteryUtil" />
+        <item itemvalue="Application.Test (2)" />
         <item itemvalue="Application.StackIInterfaceImpl" />
-        <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -537,7 +526,15 @@
       <workItem from="1659516571879" duration="466000" />
       <workItem from="1659519027191" duration="2214000" />
       <workItem from="1659528230306" duration="2252000" />
-      <workItem from="1659581672127" duration="24326000" />
+      <workItem from="1659581672127" duration="24856000" />
+      <workItem from="1660010194678" duration="215000" />
+      <workItem from="1660010541384" duration="1688000" />
+      <workItem from="1660097771906" duration="9471000" />
+      <workItem from="1660134827227" duration="1805000" />
+      <workItem from="1660270742826" duration="1191000" />
+      <workItem from="1660649539999" duration="1645000" />
+      <workItem from="1660809551286" duration="3521000" />
+      <workItem from="1660877056409" duration="606000" />
     </task>
     <task id="LOCAL-00001" summary="0.0">
       <created>1557752645396</created>
@@ -700,7 +697,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659961098542</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="新增leatcode算法题">
+      <created>1659963817783</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1659963817783</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1068,9 +1072,24 @@
           <option name="timeStamp" value="231" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/LotteryUtil.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/hah.java</url>
           <line>53</line>
           <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/括号生成.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/括号生成.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/组合.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="256" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

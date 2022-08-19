@@ -2,11 +2,11 @@ package com.example.demo.leetcode.lottery;
 
 import org.apache.commons.collections.CollectionUtils;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.*;
 
-public class LotteryUtil {
+public class hah {
 
     /**
      * 概率集合
@@ -22,7 +22,7 @@ public class LotteryUtil {
      * 构造抽奖集合
      * @param list 奖品概率
      */
-   public LotteryUtil(List<Double> list){
+   public hah(List<Double> list){
        lotteryList = new ArrayList<>();
        if(CollectionUtils.isEmpty(list)){
            throw new RuntimeException("抽奖集合不能为空");
@@ -80,6 +80,27 @@ public class LotteryUtil {
     }
 
     public static void main(String[] args) {
+        Map<Double,Integer> map = new HashMap<>();
+       for (int i = 0; i < 100000; i++) {
+            Random random = new Random();
+            double v = random.nextDouble();
+           BigDecimal bigDecimal = new BigDecimal(v).setScale(1, RoundingMode.HALF_UP);
+           double v1 = bigDecimal.doubleValue() * 10;
+           if(map.containsKey(v1)){
+                map.put(v1,map.get(v1)+1);
+            }else {
+                map.put(v1,1);
+            }
+        }
+
+            for(Map.Entry<Double, Integer> m:map.entrySet()){
+                Double index = m.getKey();
+                Integer time = m.getValue();
+                Result result = new Result(index.intValue(),100000,time,0d,(double)time/100000);
+                System.out.println(result);
+            }
+
+
     }
 
 }

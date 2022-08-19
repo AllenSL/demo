@@ -13,7 +13,7 @@ public class Test {
         list.add(2d);
         list.add(1d);
         list.add(6d);
-        LotteryUtil util = new LotteryUtil(list);
+        hah util = new hah(list);
         Map<Integer,Integer> map = new HashMap<>();
         double maxEle = util.getMaxEle();
         for (int i = 0; i < TIME; i++) {
