@@ -29,6 +29,7 @@ public class 括号生成 {
             current[pos] = '(';
             generateAll(current, pos + 1, result);
             current[pos] = ')';
+            //回溯
             generateAll(current, pos + 1, result);
         }
     }

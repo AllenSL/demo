@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe547d9f-928e-4ca0-9bd3-484c37062f06" name="Default Changelist" comment="新增leatcode算法题">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/括号生成.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/组合.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/filter/MyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/juc/SemaphoreTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/juc/SemaphoreTest2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/es/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/es/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/LotteryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/hah.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/lottery/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/括号生成.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/括号生成.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/ws/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/ws/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +134,9 @@
     <selection>xr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.demo.algorithm" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\person\project\demo\src\main\resources\jar" />
       <recent name="D:\person\project\demo\src\main\java\com\example\demo\util" />
@@ -140,17 +145,14 @@
       <recent name="D:\person\project\demo\src\main\java\com\example\demo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.demo.filter" />
       <recent name="com.example.demo.algorithm" />
       <recent name="com.example.demo.transaction" />
       <recent name="com.example.demo.util" />
       <recent name="com.example.demo.config" />
-      <recent name="com.example.demo.ffmpeg" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.demo.algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StackIInterfaceImpl">
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
     <configuration name="括号生成" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.括号生成" />
       <module name="demo" />
@@ -179,13 +181,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackIInterfaceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.StackIInterfaceImpl" />
+    <configuration name="SemaphoreTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.juc.SemaphoreTest" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.leetcode.*" />
+          <option name="PATTERN" value="com.example.demo.juc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SemaphoreTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.juc.SemaphoreTest2" />
+      <module name="demo" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.juc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -297,19 +313,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.StackIInterfaceImpl" />
       <item itemvalue="Application.LotteryUtil" />
       <item itemvalue="Application.Test (2)" />
       <item itemvalue="Application.括号生成" />
+      <item itemvalue="Application.SemaphoreTest" />
+      <item itemvalue="Application.SemaphoreTest2" />
       <item itemvalue="Remote JVM Debug.emp" />
       <item itemvalue="Spring Boot.DemoApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SemaphoreTest" />
+        <item itemvalue="Application.SemaphoreTest2" />
         <item itemvalue="Application.括号生成" />
         <item itemvalue="Application.LotteryUtil" />
         <item itemvalue="Application.Test (2)" />
-        <item itemvalue="Application.StackIInterfaceImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -534,7 +552,11 @@
       <workItem from="1660270742826" duration="1191000" />
       <workItem from="1660649539999" duration="1645000" />
       <workItem from="1660809551286" duration="3521000" />
-      <workItem from="1660877056409" duration="606000" />
+      <workItem from="1660877056409" duration="4760000" />
+      <workItem from="1660888102810" duration="11223000" />
+      <workItem from="1661409074850" duration="524000" />
+      <workItem from="1661409617241" duration="18000" />
+      <workItem from="1661409743323" duration="2292000" />
     </task>
     <task id="LOCAL-00001" summary="0.0">
       <created>1557752645396</created>
@@ -1077,19 +1099,14 @@
           <option name="timeStamp" value="234" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/括号生成.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="251" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/括号生成.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="252" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/组合.java</url>
           <line>17</line>
           <option name="timeStamp" value="256" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/括号生成.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="257" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
