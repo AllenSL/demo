@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe547d9f-928e-4ca0-9bd3-484c37062f06" name="Default Changelist" comment="新增leatcode算法题">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/filter/MyFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/juc/SemaphoreTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/juc/SemaphoreTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/InsertSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/括号生成.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/括号生成.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/ws/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/ws/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,9 +148,9 @@
       <recent name="com.example.demo.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication">
-    <configuration name="括号生成" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.括号生成" />
+  <component name="RunManager" selected="Application.InsertSort">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.BubbleSort" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
@@ -167,13 +163,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LotteryUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.lottery.LotteryUtil" />
+    <configuration name="InsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.InsertSort" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.leetcode.lottery.*" />
+          <option name="PATTERN" value="com.example.demo.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.SelectionSort" />
+      <module name="demo" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,20 +212,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.demo.juc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.lottery.Test" />
-      <module name="demo" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.leetcode.lottery.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -271,6 +267,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <shortenClasspath name="NONE" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -313,21 +322,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LotteryUtil" />
-      <item itemvalue="Application.Test (2)" />
-      <item itemvalue="Application.括号生成" />
       <item itemvalue="Application.SemaphoreTest" />
       <item itemvalue="Application.SemaphoreTest2" />
       <item itemvalue="Remote JVM Debug.emp" />
       <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Application.SelectionSort" />
+      <item itemvalue="Application.BubbleSort" />
+      <item itemvalue="Application.InsertSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InsertSort" />
+        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.SelectionSort" />
         <item itemvalue="Application.SemaphoreTest" />
         <item itemvalue="Application.SemaphoreTest2" />
-        <item itemvalue="Application.括号生成" />
-        <item itemvalue="Application.LotteryUtil" />
-        <item itemvalue="Application.Test (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -557,6 +566,7 @@
       <workItem from="1661409074850" duration="524000" />
       <workItem from="1661409617241" duration="18000" />
       <workItem from="1661409743323" duration="2292000" />
+      <workItem from="1663590820014" duration="3278000" />
     </task>
     <task id="LOCAL-00001" summary="0.0">
       <created>1557752645396</created>
@@ -726,7 +736,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659963817783</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="新增leatcode算法题">
+      <created>1663590841002</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1663590841002</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1107,6 +1124,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/括号生成.java</url>
           <line>23</line>
           <option name="timeStamp" value="257" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/SelectionSort.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="258" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
