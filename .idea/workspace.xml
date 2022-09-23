@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe547d9f-928e-4ca0-9bd3-484c37062f06" name="Default Changelist" comment="新增leatcode算法题">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/InsertSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/algorithm/DoubleEndsQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/algorithm/MergeSort2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/algorithm/RemoveListNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/LRUCache.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +117,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/example/demo/transaction" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../团抢拼直降API/pop-promotion-rest" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/bin/IU-203.7717.56_memory_ansonglin_23.09.2022_10.28.24.hprof" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -148,9 +149,23 @@
       <recent name="com.example.demo.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.InsertSort">
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.BubbleSort" />
+  <component name="RunManager" selected="Application.MergeSort2">
+    <configuration name="DoubleEndsQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.algorithm.DoubleEndsQueue" />
+      <module name="demo" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.LRUCache" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
@@ -163,13 +178,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.InsertSort" />
+    <configuration name="MergeSort2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.algorithm.MergeSort2" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.leetcode.*" />
+          <option name="PATTERN" value="com.example.demo.algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,13 +192,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.SelectionSort" />
+    <configuration name="MergeSort3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.algorithm.MergeSort3" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.leetcode.*" />
+          <option name="PATTERN" value="com.example.demo.algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,64 +206,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SemaphoreTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.juc.SemaphoreTest" />
-      <module name="demo" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.juc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SemaphoreTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.juc.SemaphoreTest2" />
-      <module name="demo" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.juc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="组合" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.组合" />
-      <module name="demo" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="递归" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.递归" />
-      <module name="demo" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="抽奖" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.algorithm.抽奖" />
+    <configuration name="RemoveListNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.algorithm.RemoveListNode" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
@@ -267,15 +226,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -322,21 +279,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SemaphoreTest" />
-      <item itemvalue="Application.SemaphoreTest2" />
+      <item itemvalue="Application.LRUCache" />
+      <item itemvalue="Application.RemoveListNode" />
+      <item itemvalue="Application.DoubleEndsQueue" />
+      <item itemvalue="Application.MergeSort2" />
       <item itemvalue="Remote JVM Debug.emp" />
       <item itemvalue="Spring Boot.DemoApplication" />
-      <item itemvalue="Application.SelectionSort" />
-      <item itemvalue="Application.BubbleSort" />
-      <item itemvalue="Application.InsertSort" />
+      <item itemvalue="Application.MergeSort3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InsertSort" />
-        <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="Application.SelectionSort" />
-        <item itemvalue="Application.SemaphoreTest" />
-        <item itemvalue="Application.SemaphoreTest2" />
+        <item itemvalue="Application.MergeSort2" />
+        <item itemvalue="Application.MergeSort3" />
+        <item itemvalue="Application.DoubleEndsQueue" />
+        <item itemvalue="Application.RemoveListNode" />
+        <item itemvalue="Application.LRUCache" />
       </list>
     </recent_temporary>
   </component>
@@ -566,7 +523,14 @@
       <workItem from="1661409074850" duration="524000" />
       <workItem from="1661409617241" duration="18000" />
       <workItem from="1661409743323" duration="2292000" />
-      <workItem from="1663590820014" duration="3278000" />
+      <workItem from="1663590820014" duration="3338000" />
+      <workItem from="1663659018006" duration="7657000" />
+      <workItem from="1663670671226" duration="1547000" />
+      <workItem from="1663676989759" duration="19538000" />
+      <workItem from="1663842467688" duration="3825000" />
+      <workItem from="1663899825659" duration="132000" />
+      <workItem from="1663900006623" duration="753000" />
+      <workItem from="1663900794009" duration="7475000" />
     </task>
     <task id="LOCAL-00001" summary="0.0">
       <created>1557752645396</created>
@@ -743,7 +707,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663590841002</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="新增leatcode算法题">
+      <created>1663594132459</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1663594132459</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1027,12 +998,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/LRUCache.java</url>
-          <line>88</line>
+          <line>89</line>
           <option name="timeStamp" value="199" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/LRUCache.java</url>
-          <line>89</line>
+          <line>91</line>
           <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1129,6 +1100,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/SelectionSort.java</url>
           <line>10</line>
           <option name="timeStamp" value="258" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/algorithm/RemoveListNode.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="259" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/algorithm/RemoveListNode.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/algorithm/DoubleEndsQueue.java</url>
+          <line>214</line>
+          <option name="timeStamp" value="262" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

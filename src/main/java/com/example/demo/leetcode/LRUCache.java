@@ -86,7 +86,33 @@ public class LRUCache {
 
     public static void main(String[] args) {
         LRUCache lruCache = new LRUCache(1);
+        lruCache.put(1,2);
         lruCache.put(2,1);
+        System.out.println(lruCache.get(1));
         System.out.println(lruCache.get(2));
+
+        int mid = (5+8)/2;
+        System.out.println(mid);
+        int mid1 =5+ (8-5)/2;
+        System.out.println(mid1);
+        System.out.println(2<<2 | 1);
+        System.out.println(6^7);
     }
+
+
+
+
+    ListNode revertListNode(ListNode head){
+        ListNode pre = null;
+        ListNode next = null;
+        while (head != null){
+            next = head.next;
+            //select single node
+            head.next = pre;
+            pre = head;
+            head = next;
+        }
+        return pre;
+    }
+
 }
