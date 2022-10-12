@@ -17,7 +17,6 @@ public class LRUCache {
         public ListNode( ){
         }
     }
-
     HashMap<Integer,ListNode> cache = new HashMap<>();
     int capacity;
     int size;
@@ -98,8 +97,6 @@ public class LRUCache {
         System.out.println(2<<2 | 1);
         System.out.println(6^7);
     }
-
-
 
 
     ListNode revertListNode(ListNode head){
