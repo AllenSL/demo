@@ -4,11 +4,19 @@ spring:
   profiles:
     active: dev
 
-
   #热部署配置
   devtools:
     restart:
       enabled: true
+  application:
+    name: demo
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8720
+        clientIp: 127.0.0.1
+
 
 #配置mybatis扫描mapper.xml  不能Springboot代替扫描，需mybatis自己扫描
 #mybatis:
@@ -65,3 +73,4 @@ data:
     database: mall
 
 hystrix.command.fallbackcmd.execution.isolation.thread.timeoutInMilliseconds: 5000
+

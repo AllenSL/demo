@@ -27,8 +27,18 @@ public class letterCombinations {
         return combinations;
     }
 
+    /**
+     * 经典的回溯算法模板
+     *
+     * @param combinations
+     * @param phoneMap
+     * @param digits
+     * @param index
+     * @param combination
+     */
     public static void backtrack(List<String> combinations, Map<Character, String> phoneMap,
                                  String digits, int index, StringBuffer combination) {
+         //长度满足条件则放入数组中(比如abc def两个进行组合，则满足index == digits.length==2，就放入集合中)
         if (index == digits.length()) {
             combinations.add(combination.toString());
         } else {
@@ -38,12 +48,15 @@ public class letterCombinations {
             for (int i = 0; i < lettersCount; i++) {
                 combination.append(letters.charAt(i));
                 backtrack(combinations, phoneMap, digits, index + 1, combination);
+                //回溯算法
                 combination.deleteCharAt(index);
             }
         }
     }
 
     public static void main(String[] args) {
-        System.out.println(letterCombinations("23"));
+        System.out.println(letterCombinations("234"));
     }
+
+
 }

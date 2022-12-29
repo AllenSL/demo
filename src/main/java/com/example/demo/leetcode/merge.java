@@ -19,22 +19,39 @@ public class merge {
     }
 
     public static void main(String[] args) {
-        int[][] arr = new int[3][];
-        int[] a1 = new int[2];
-        a1[0] = 2;
-        a1[1] = 4;
+//        int[][] arr = new int[3][];
+//        int[] a1 = new int[2];
+//        a1[0] = 2;
+//        a1[1] = 4;
+//
+//        int[] a2 = new int[2];
+//        a2[0] = 1;
+//        a2[1] = 5;
+//
+//        int[] a3 = new int[2];
+//        a3[0] = 4;
+//        a3[1] = 6;
+//
+//        arr[0] = a1;
+//        arr[1] = a2;
+//        arr[2] = a3;
+//        process(arr);
 
-        int[] a2 = new int[2];
-        a2[0] = 1;
-        a2[1] = 5;
 
-        int[] a3 = new int[2];
-        a3[0] = 4;
-        a3[1] = 6;
-
-        arr[0] = a1;
-        arr[1] = a2;
-        arr[2] = a3;
-        process(arr);
+        System.out.println(n(3));
     }
+
+
+    /**
+     * n的阶乘
+     * @param num
+     * @return
+     */
+    static int n(int num){
+        if(num == 1 ){
+            return 1;
+        }
+        return num * n(num-1);
+    }
+
 }

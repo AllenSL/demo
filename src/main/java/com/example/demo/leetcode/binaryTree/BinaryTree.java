@@ -12,8 +12,15 @@ public class BinaryTree {
         binaryTreeNode.right.right = new BinaryTreeNode(23);
 //        sequencetraversal(binarytreenode);
 
-        List<Integer> list = inorderTraversal(binaryTreeNode);
-        System.out.println(list);
+//        List<Integer> list = inorderTraversal(binaryTreeNode);
+
+        TreeNode treeNode = new TreeNode(9);
+        treeNode.left = new TreeNode(8);
+        treeNode.right = new TreeNode(10);
+        treeNode.right.left = new TreeNode(21);
+        treeNode.right.right = new TreeNode(23);
+        int depth = getDepth(treeNode);
+        System.out.println(depth);
     }
 
     List<Integer> list = new ArrayList<>();
@@ -134,6 +141,71 @@ public class BinaryTree {
             }
             maxLength = Math.max(maxLength, curLevelNodes);
         }
-
     }
+
+
+    /**
+     * 获取二叉树的深度
+     * @param node
+     * @return
+     */
+    public static int getDepth(TreeNode node){
+        if(node == null) return 0;
+        System.out.println(node.val);
+        int leftdepth = getDepth(node.left);
+        int rightdepth = getDepth(node.right);
+        int max = Math.max(leftdepth, rightdepth) + 1;
+        System.out.println(max);
+        return max;
+    }
+
+
+
+
+
+
+
+
+
+    private class ReturnRes{
+        boolean isB;
+        int depth;
+        public ReturnRes(boolean isB,int depth){
+            this.isB = isB;
+            this.depth = depth;
+        }
+    }
+
+    public boolean isBalanced(TreeNode root) {
+        if(root == null){
+            return true;
+        }
+        //整体思路有点像后序遍历
+        ReturnRes res = dfs(root);
+        return res.isB;
+    }
+
+    ReturnRes dfs(TreeNode root){
+        //递归终止条件
+        if(root == null){
+            return new ReturnRes(true,0);
+        }
+        ReturnRes left = dfs(root.left);
+        ReturnRes right = dfs(root.right);
+
+        //判断是否是二叉树
+        if(left.isB == false || right.isB == false){
+            return new ReturnRes(false,0);
+        }
+        //判断左右两棵树的高度差
+        if(Math.abs(left.depth-right.depth)>1){
+            return new ReturnRes(false,0);
+        }
+
+        return new ReturnRes(true,Math.max(left.depth,right.depth)+1);
+    }
+
+
+
+
 }

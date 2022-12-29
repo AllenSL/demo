@@ -5,18 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe547d9f-928e-4ca0-9bd3-484c37062f06" name="Default Changelist" comment="新增leatcode算法题">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/algorithm/RedEnvelope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/AddTwoNumbers2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/LRU2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/LRU3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/MergeTwoSortNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/binaryTree/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/binaryTree/BinaryTreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/kListNodeReverse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/juc/AQS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/BackTracingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/CountStudents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/PathSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/RecursiveAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/binaryTree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/ss.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/decorator/test1/BaseBattercake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/decorator/test1/Battercake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/decorator/test1/BattercakeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/decorator/test1/BattercakeDecoratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/decorator/test1/EggDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pattern/decorator/test1/SausageDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/sentinel/TestSentinalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/binaryTree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/binaryTree/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/binaryTree/BinaryTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/binaryTree/BinaryTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/letterCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/letterCombinations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/merge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/merge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +146,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RebelAgentSelection">
     <selection>xr</selection>
   </component>
@@ -156,14 +171,28 @@
       <recent name="com.example.demo.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.merge">
-    <configuration name="AddTwoNumbers2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.AddTwoNumbers2" />
+  <component name="RunManager" selected="Application.BattercakeDecoratorTest">
+    <configuration name="BackTracingTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.BackTracingTest" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.demo.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BattercakeDecoratorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.pattern.decorator.test1.BattercakeDecoratorTest" />
+      <module name="demo" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.pattern.decorator.test1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,8 +214,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LRU3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.LRU3" />
+    <configuration name="CountStudents" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.CountStudents" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
@@ -199,8 +228,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeTwoSortNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.MergeTwoSortNode" />
+    <configuration name="PathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.PathSum" />
       <module name="demo" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <extension name="coverage">
@@ -219,16 +248,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="merge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.leetcode.merge" />
-      <module name="demo" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -275,21 +303,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LRU3" />
-      <item itemvalue="Application.AddTwoNumbers2" />
-      <item itemvalue="Application.MergeTwoSortNode" />
+      <item itemvalue="Application.BackTracingTest" />
+      <item itemvalue="Application.CountStudents" />
+      <item itemvalue="Application.PathSum" />
       <item itemvalue="Application.BinaryTree" />
-      <item itemvalue="Application.merge" />
       <item itemvalue="Remote JVM Debug.emp" />
       <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Application.BattercakeDecoratorTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.merge" />
+        <item itemvalue="Application.BattercakeDecoratorTest" />
         <item itemvalue="Application.BinaryTree" />
-        <item itemvalue="Application.MergeTwoSortNode" />
-        <item itemvalue="Application.AddTwoNumbers2" />
-        <item itemvalue="Application.LRU3" />
+        <item itemvalue="Application.PathSum" />
+        <item itemvalue="Application.BackTracingTest" />
+        <item itemvalue="Application.CountStudents" />
       </list>
     </recent_temporary>
   </component>
@@ -539,7 +567,20 @@
       <workItem from="1665194506056" duration="5173000" />
       <workItem from="1665213514176" duration="1611000" />
       <workItem from="1665219776744" duration="28002000" />
-      <workItem from="1665553289211" duration="788000" />
+      <workItem from="1665553289211" duration="41454000" />
+      <workItem from="1666073259491" duration="3207000" />
+      <workItem from="1666146988903" duration="5074000" />
+      <workItem from="1666179038307" duration="3586000" />
+      <workItem from="1666666583722" duration="2507000" />
+      <workItem from="1667213891126" duration="1258000" />
+      <workItem from="1667293812880" duration="5423000" />
+      <workItem from="1667815782915" duration="3792000" />
+      <workItem from="1668751408261" duration="6372000" />
+      <workItem from="1671502207567" duration="8806000" />
+      <workItem from="1671586162119" duration="16000" />
+      <workItem from="1671696261804" duration="198000" />
+      <workItem from="1671761089328" duration="2606000" />
+      <workItem from="1672281576981" duration="2326000" />
     </task>
     <task id="LOCAL-00001" summary="0.0">
       <created>1557752645396</created>
@@ -1037,7 +1078,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/letterCombinations.java</url>
-          <line>31</line>
+          <line>41</line>
           <option name="timeStamp" value="209" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1137,12 +1178,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/binaryTree/BinaryTree.java</url>
-          <line>48</line>
+          <line>55</line>
           <option name="timeStamp" value="288" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/binaryTree/BinaryTree.java</url>
-          <line>57</line>
+          <line>64</line>
           <option name="timeStamp" value="290" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1172,21 +1213,86 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/binaryTree/BinaryTree.java</url>
-          <line>15</line>
+          <line>22</line>
           <option name="timeStamp" value="308" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/binaryTree/BinaryTree.java</url>
-          <line>29</line>
+          <line>36</line>
           <option name="timeStamp" value="309" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/binaryTree/BinaryTree.java</url>
-          <line>26</line>
+          <line>33</line>
           <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/RecursiveAlgorithm.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/ss.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/ss.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="325" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/ss.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="326" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/ss.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="327" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/CountStudents.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="330" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/CountStudents.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="331" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/CountStudents.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="332" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/CountStudents.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="333" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/CountStudents.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="334" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/CountStudents.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="335" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/leetcode/binaryTree/BinaryTree.java</url>
+          <line>152</line>
+          <option name="timeStamp" value="339" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.example.demo.leetcode.Node" memberName="key" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="rs" />

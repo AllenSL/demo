@@ -10,7 +10,7 @@ public class BinaryTreeNode {
 
     public int value;
 
-    BinaryTreeNode(Integer value) {
+    public BinaryTreeNode(Integer value) {
         this.value = value;
     }
 
